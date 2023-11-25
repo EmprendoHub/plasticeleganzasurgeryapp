@@ -2,11 +2,12 @@ import React from 'react';
 import ListProducts from '@/components/products/ListProducts';
 import MainServicesComponent from '@/components/services/MainServicesComponent';
 import PageTransition from '@/components/transitions/PageTransition';
-import { getAllJsonlProducts } from '@/helpers';
+import getAllJsonlProducts from '@/data/localproducts.json';
 
 const ServiciosPage = async () => {
-  const data = await getAllJsonlProducts();
-  const products = data.products;
+  console.log(getAllJsonlProducts);
+  const data = await getAllJsonlProducts;
+  const products = data;
   return (
     <div>
       <PageTransition />

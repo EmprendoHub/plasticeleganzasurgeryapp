@@ -3,12 +3,12 @@ import MainLayout from '../components/layouts/MainLayout';
 import Script from 'next/script';
 
 export const metadata = {
-  metadataBase: new URL('https://www.drfranciscorodriguez.mx/'),
+  metadataBase: new URL('https://www.eleganzaplasticsurgery.com/'),
   title: {
-    default: 'Dr Francisco Rodriguez | Cirujano Plástico',
-    template: `%s | Dr Francisco Rodriguez`,
+    default: 'Eleganza Plastic Surgery | Cirugía Plástica',
+    template: `%s | Eleganza Plastic Surgery`,
   },
-  description: 'Dr Francisco Rodriguez cirugía plástica en Zamora Michoacan',
+  description: 'Eleganza Plastic Surgery cirugía plástica en Zamora Michoacan',
 };
 
 const GTM_ID = 'GTM-N4382WJN';

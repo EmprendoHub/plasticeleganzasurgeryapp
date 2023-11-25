@@ -7,11 +7,11 @@ const PoliticaPage = () => {
         <h1 className="text-2xl font-bold mb-4">Política de Privacidad</h1>
 
         <p className="mb-4">
-          Esta Política de Privacidad describe cómo www.drfranciscorodriguez.mx
-          (en adelante, el Sitio Web) recopila, utiliza y protege su información
-          personal. Al utilizar este Sitio Web, usted acepta las prácticas
-          descritas en esta política. Lea esta política detenidamente antes de
-          usar el Sitio Web.
+          Esta Política de Privacidad describe cómo
+          www.eleganzaplasticsurgery.com (en adelante, el Sitio Web) recopila,
+          utiliza y protege su información personal. Al utilizar este Sitio Web,
+          usted acepta las prácticas descritas en esta política. Lea esta
+          política detenidamente antes de usar el Sitio Web.
         </p>
 
         <h2 className="text-xl font-semibold mb-2">

@@ -7,8 +7,8 @@ const TerminosPage = () => {
         <h1 className="text-2xl font-bold mb-4">Términos del Servicio</h1>
 
         <p className="mb-4">
-          Este sitio web, www.drfranciscorodriguez.mx, (en adelante, el Sitio
-          Web) es operado por el Dr. Francisco Rodriguez, un proveedor de
+          Este sitio web, www.eleganzaplasticsurgery.com, (en adelante, el Sitio
+          Web) es operado por el Eleganza Plastic Surgery, un proveedor de
           servicios de cirugía plástica. Al acceder o utilizar este Sitio Web,
           usted acepta cumplir y quedar sujeto a los siguientes términos y
           condiciones. Lea estos términos detenidamente antes de usar el Sitio
@@ -29,7 +29,7 @@ const TerminosPage = () => {
           2. Servicios Ofrecidos
         </h2>
         <p>
-          El Dr. Francisco Rodriguez ofrece una variedad de procedimientos de
+          El Eleganza Plastic Surgery ofrece una variedad de procedimientos de
           cirugía plástica, que incluyen, entre otros:
         </p>
         <ul className="list-disc pl-8 mt-2">
@@ -55,7 +55,7 @@ const TerminosPage = () => {
           La información proporcionada en este Sitio Web es solo para fines
           informativos generales. No pretende ser un sustituto de asesoramiento
           médico profesional, diagnóstico o tratamiento. Consulte directamente
-          con el Dr. Francisco Rodriguez para obtener asesoramiento
+          con el Eleganza Plastic Surgery para obtener asesoramiento
           personalizado sobre los procedimientos de cirugía plástica.
         </p>
 
@@ -100,7 +100,7 @@ const TerminosPage = () => {
           7. Limitación de Responsabilidad
         </h2>
         <p>
-          El Dr. Francisco Rodriguez y los operadores de este Sitio Web no son
+          El Eleganza Plastic Surgery y los operadores de este Sitio Web no son
           responsables de daños directos, indirectos, incidentales, consecuentes
           o punitivos que surjan de su uso del Sitio Web o la información
           proporcionada.
@@ -108,7 +108,7 @@ const TerminosPage = () => {
 
         <h2 className="text-xl font-semibold mt-6 mb-2">8. Terminación</h2>
         <p>
-          El Dr. Francisco Rodriguez se reserva el derecho de finalizar o
+          El Eleganza Plastic Surgery se reserva el derecho de finalizar o
           suspender su acceso al Sitio Web sin previo aviso y por cualquier
           motivo, incluyendo violaciones de estos Términos del Servicio.
         </p>
@@ -117,7 +117,7 @@ const TerminosPage = () => {
           9. Cambios en los Términos del Servicio
         </h2>
         <p>
-          El Dr. Francisco Rodriguez se reserva el derecho de cambiar o
+          El Eleganza Plastic Surgery se reserva el derecho de cambiar o
           modificar estos Términos del Servicio en cualquier momento. Los
           usuarios serán notificados de los cambios, y es su responsabilidad
           revisar y aceptar los términos actualizados.

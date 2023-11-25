@@ -5,7 +5,7 @@ export const testimonials = [
     rating: '5',
     position: 'Paciente',
     message:
-      'El Dr. Francisco Rodríguez es un cirujano excepcional. Me hizo sentir cómoda y segura desde la primera consulta. Mi cirugía fue un éxito, y estoy encantada con los resultados. ¡Gracias, Dr. Rodríguez!',
+      'Eleganza Plastic Surgery es grupo de cirujanos excepcionales. El Dr Rodriguez Me hizo sentir cómoda y segura desde la primera consulta. Mi cirugía fue un éxito, y estoy encantada con los resultados. ¡Gracias, Dr. Rodríguez!',
   },
   {
     image: '/testimonial-3-avatar1.webp',

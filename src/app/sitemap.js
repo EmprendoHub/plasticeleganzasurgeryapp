@@ -17,7 +17,7 @@ const getAllProducts = async () => {
 };
 
 export default async function sitemap() {
-  const baseUrl = 'https://www.drfranciscorodriguez.mx';
+  const baseUrl = 'https://www.eleganzaplasticsurgery.com';
   // Get all products
   const products = await getAllProducts();
   const productUrls =
@@ -30,31 +30,31 @@ export default async function sitemap() {
 
   return [
     {
-      url: 'https://www.drfranciscorodriguez.mx/',
+      url: 'https://www.eleganzaplasticsurgery.com/',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
     },
     {
-      url: 'https://www.drfranciscorodriguez.mx/acerca',
+      url: 'https://www.eleganzaplasticsurgery.com/acerca',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://www.drfranciscorodriguez.mx/contacto',
+      url: 'https://www.eleganzaplasticsurgery.com/contacto',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: 'https://www.drfranciscorodriguez.mx/faq',
+      url: 'https://www.eleganzaplasticsurgery.com/faq',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: 'https://www.drfranciscorodriguez.mx/testimonios',
+      url: 'https://www.eleganzaplasticsurgery.com/testimonios',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,

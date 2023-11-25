@@ -6,8 +6,8 @@ import { redirect } from 'next/navigation';
 import PageTransition from '@/components/transitions/PageTransition';
 
 export const metadata = {
-  metadataBase: new URL('https://www.drfranciscorodriguez.mx/'),
-  title: 'Ordenes | Dr Francisco Rodriguez | Cirujano Plástico',
+  metadataBase: new URL('https://www.eleganzaplasticsurgery.com/'),
+  title: 'Ordenes | Eleganza Plastic Surgery | Cirugía Plástica',
   description: 'Explora tu historial de procedimientos',
   robots: {
     index: false,

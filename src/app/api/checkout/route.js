@@ -24,8 +24,8 @@ export const POST = async (request) => {
       payment_method_types: ['card'],
       line_items: extractingItems,
       mode: 'payment',
-      success_url: `https://drfranciscorodriguez.mx/exito`,
-      cancel_url: `https://drfranciscorodriguez.mx/`,
+      success_url: `https://eleganzaplasticsurgery.com/exito`,
+      cancel_url: `https://eleganzaplasticsurgery.com/`,
       metadata: {
         email,
       },

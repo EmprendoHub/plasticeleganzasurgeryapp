@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
           card: 'summary_large_image',
           title: product.title,
           description: product.description,
-          siteId: 'Dr Francisco Rodriguez',
+          siteId: 'Eleganza Plastic Surgery',
           creator: 'Emprendomex Marketing',
           creatorId: '98273409872134',
           images: product.imageUrls,

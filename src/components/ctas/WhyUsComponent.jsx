@@ -90,7 +90,7 @@ const WhyUsComponent = () => {
           height={650}
           quality={100}
           className="max-w-[100%]  relative my-0 z-[1] lg:top-[15px] w-auto h-auto"
-          alt="Dr Francisco Rodriguez"
+          alt="Eleganza Plastic Surgery"
           src="/frame-79.webp"
         />
       </motion.div>

@@ -15,7 +15,7 @@ const SuccessPage = () => {
         <div>
           <h2 className="text-7xl font-headerFont">Gracias por tu pago</h2>
           <h3 className="font-bodyFont text-2xl mt-3">
-            El pago fue aceptado exitosamente por el Dr. Francisco Rodriguez
+            El pago fue aceptado exitosamente por Eleganza Plastic Surgery
           </h3>
           <p className="text-lg">
             Ahora puedes ver tus pedidos o continuar explorando nuestros

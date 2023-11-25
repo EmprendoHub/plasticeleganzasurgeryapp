@@ -5,7 +5,6 @@ import PageTransition from '@/components/transitions/PageTransition';
 import getAllJsonlProducts from '@/data/localproducts.json';
 
 const ServiciosPage = async () => {
-  console.log(getAllJsonlProducts);
   const data = await getAllJsonlProducts;
   const products = data;
   return (

@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
-import { localproducts } from '@/data/localproductsdatta';
+import data from '@/data/localproducts.json';
 
 export const GET = async () => {
   try {
-    const products = localproducts;
+    console.log(data, 'data');
+    const products = data;
     const response = NextResponse.json({
       message: 'Local Products fetched successfully',
       success: true,

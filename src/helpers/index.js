@@ -45,6 +45,16 @@ export const getAllLocalProducts = async () => {
   return data;
 };
 
+export const getAllJsonlProducts = async () => {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/localservicios`);
+  const data = await res.json();
+  if (!{ data }) {
+    throw new Error('Failed to fetch local products');
+  }
+
+  return data;
+};
+
 export const getOneLocalProduct = async (_id) => {
   const URL = `${process.env.NEXTAUTH_URL}/api/localservicio?${_id}`;
   try {

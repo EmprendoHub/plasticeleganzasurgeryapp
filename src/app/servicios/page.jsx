@@ -2,10 +2,10 @@ import React from 'react';
 import ListProducts from '@/components/products/ListProducts';
 import MainServicesComponent from '@/components/services/MainServicesComponent';
 import PageTransition from '@/components/transitions/PageTransition';
-import { getProducts } from '@/helpers';
+import { getAllJsonlProducts } from '@/helpers';
 
 const ServiciosPage = async () => {
-  const data = await getProducts();
+  const data = await getAllJsonlProducts();
   const products = data.products;
   return (
     <div>

@@ -1,5 +1,5 @@
 const getAllProducts = async () => {
-  const URL = `${process.env.NEXTAUTH_URL}/api/servicios`;
+  const URL = `/api/servicios`;
 
   try {
     const res = await fetch(URL, {

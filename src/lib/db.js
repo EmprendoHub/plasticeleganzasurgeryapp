@@ -23,7 +23,7 @@ async function disconnect() {
     try {
       await mongoose.disconnect();
       connection.isConnected = false;
-      console.log('Disconnected from MongoDB 1');
+      console.log('Disconnected from MongoDB');
     } catch (error) {
       console.error('Error disconnecting from MongoDB:', error);
       throw error;

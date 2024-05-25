@@ -3,7 +3,6 @@ import data from '@/data/localproducts.json';
 
 export const GET = async () => {
   try {
-    console.log(data, 'data');
     const products = data;
     const response = NextResponse.json({
       message: 'Local Products fetched successfully',

@@ -9,7 +9,7 @@ export const accordions = [
     id: 2,
     pregunta: "¿Que incluye el costo del procedimiento?",
     respuesta:
-      "Incluye lo que viene siendo laboratorios, ⁠medicamentos, hospital, honorarios médicos, faja y/o brasier postquirúrgico, 5 masajes linfáticos (en caso de ser lipo) y seguimiento médico; todo lo necesario para su comodidad y seguridad.",
+      "Incluye lo que viene siendo laboratorios, medicamentos, hospital, honorarios médicos, faja y/o brasier postquirúrgico, 5 masajes linfáticos (en caso de ser lipo) y seguimiento médico; todo lo necesario para su comodidad y seguridad.",
   },
   {
     id: 3,

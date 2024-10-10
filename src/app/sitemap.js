@@ -1,11 +1,11 @@
 const getAllProducts = async () => {
-  const URL = `${process.env.NEXTAUTH_URL}/api/servicios`;
+  const URL = `${process.env.NNEXT_PUBLIC_EXTAUTH_URL}/api/servicios`;
 
   try {
     const res = await fetch(URL, {
-      mode: 'cors',
+      mode: "cors",
       headers: {
-        'Access-Control-Allow-Origin': 'GET, POST, PUT',
+        "Access-Control-Allow-Origin": "GET, POST, PUT",
       },
     });
 
@@ -17,7 +17,7 @@ const getAllProducts = async () => {
 };
 
 export default async function sitemap() {
-  const baseUrl = 'https://www.eleganzaplasticsurgery.com';
+  const baseUrl = "https://www.eleganzaplasticsurgery.com";
   // Get all products
   const products = await getAllProducts();
   const productUrls =
@@ -30,33 +30,33 @@ export default async function sitemap() {
 
   return [
     {
-      url: 'https://www.eleganzaplasticsurgery.com/',
+      url: "https://www.eleganzaplasticsurgery.com/",
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: "yearly",
       priority: 1,
     },
     {
-      url: 'https://www.eleganzaplasticsurgery.com/acerca',
+      url: "https://www.eleganzaplasticsurgery.com/acerca",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: 'https://www.eleganzaplasticsurgery.com/contacto',
+      url: "https://www.eleganzaplasticsurgery.com/contacto",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://www.eleganzaplasticsurgery.com/faq',
+      url: "https://www.eleganzaplasticsurgery.com/faq",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: 'https://www.eleganzaplasticsurgery.com/testimonios',
+      url: "https://www.eleganzaplasticsurgery.com/testimonios",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     ...productUrls,

@@ -54,8 +54,7 @@ export const getAllJsonlProducts = async () => {
 export const getOneLocalProduct = async (_id) => {
   const URL = `/api/localservicio?${_id}`;
   try {
-    const res = await fetch(URL);
-    const data = await res.json();
+    const { data } = await axios.get(URL);
     return data.product;
   } catch (error) {
     console.log(error);

@@ -5,8 +5,8 @@ import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/shoppingSlice";
-import { getOneLocalProduct } from "@/helpers";
 import { useRouter } from "next/navigation";
+import { getOneLocalProduct } from "../../app/_actions";
 
 const FooterComponent = () => {
   const dispatch = useDispatch();
@@ -55,6 +55,7 @@ const FooterComponent = () => {
                       const product = await getOneLocalProduct(
                         "653310c18d22988a4a58dff4"
                       );
+
                       dispatch(addToCart(product)) && router.push("/cart");
                     }}
                   >

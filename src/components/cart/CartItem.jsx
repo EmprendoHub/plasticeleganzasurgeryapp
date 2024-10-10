@@ -1,28 +1,11 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { AiOutlineClose } from 'react-icons/ai';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import {
-  decreaseQuantity,
-  deleteProduct,
-  increaseQuantity,
-} from '@/redux/shoppingSlice';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import FormatedPrice from '@/helpers/FormatedPrice';
-import Image from 'next/image';
-
-function getFirstImage(imageUrls) {
-  let firstValue;
-
-  for (const key in imageUrls) {
-    if (imageUrls.hasOwnProperty(key)) {
-      firstValue = imageUrls[key];
-      break; // Exit the loop after the first value is found
-    }
-  }
-  return firstValue;
-}
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { AiOutlineClose } from "react-icons/ai";
+import { deleteProduct } from "@/redux/shoppingSlice";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import FormatedPrice from "@/helpers/FormatedPrice";
+import Image from "next/image";
 
 const CartItem = () => {
   const { productData } = useSelector((state) => state?.shopping);
@@ -63,7 +46,7 @@ const CartItem = () => {
             {/* Model Value */}
             <div className="w-full flex  justify-start sm:pl-7 ">
               <p className="text-lg font-semibold">
-                <FormatedPrice amount={item?.quantity * item.price} />
+                <FormatedPrice amount={item?.quantity * item?.price} />
               </p>
             </div>
             {/* Title and description */}
@@ -82,21 +65,6 @@ const CartItem = () => {
                 <FormatedPrice amount={item?.deposit} />
               </p>
             </div>
-            {/* quantity value */}
-            {/* <div className='flex  items-center justify-end gap-x-3 border-[1px] border-slate-300 py-2 px-4 w-auto'>
-                            <p className=''>
-                                Cant
-                            </p>
-                            <div className='flex items-center text-lg  w-20 justify-between'>
-                                <span onClick={() => dispatch(decreaseQuantity(item)) && toast.success(`${item.title} disminuyo en cantidad`)} className='cursor-pointer'>
-                                    <FiChevronLeft />   
-                                </span>
-                                <span>{item?.quantity}</span>
-                                <span onClick={()=> dispatch(increaseQuantity(item)) && toast.success(`${item.title} incremento en cantidad`)} className='cursor-pointer'>
-                                    <FiChevronRight />   
-                                </span>
-                            </div>
-                        </div> */}
           </div>
         ))}
       </div>

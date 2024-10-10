@@ -1,7 +1,7 @@
-import ProductDetails from '@/components/products/ProductDetails';
-import PageTransition from '@/components/transitions/PageTransition';
-import React from 'react';
-import { getOneLocalProduct } from '@/helpers';
+import { getOneLocalProduct } from "@/app/_actions";
+import ProductDetails from "@/components/products/ProductDetails";
+import PageTransition from "@/components/transitions/PageTransition";
+import React from "react";
 
 // or Dynamic metadata
 export async function generateMetadata({ params }) {
@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
 
     if (!product)
       return {
-        title: 'No se Encontró',
-        description: 'La Pagina que buscabas no existe',
+        title: "No se Encontró",
+        description: "La Pagina que buscabas no existe",
       };
     return {
       title: product.title,
@@ -19,24 +19,24 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: `/servicio/${params.id}`,
         languages: {
-          'en-US': `/en/servicio/${params.id}`,
-          'es-MX': `/es/servicio/${params.id}`,
+          "en-US": `/en/servicio/${params.id}`,
+          "es-MX": `/es/servicio/${params.id}`,
         },
         twitter: {
-          card: 'summary_large_image',
+          card: "summary_large_image",
           title: product.title,
           description: product.description,
-          siteId: 'Eleganza Plastic Surgery',
-          creator: 'Emprendomex Marketing',
-          creatorId: '98273409872134',
+          siteId: "Eleganza Plastic Surgery",
+          creator: "Emprendomex Marketing",
+          creatorId: "98273409872134",
           images: product.imageUrls,
         },
       },
     };
   } catch (error) {
     return {
-      title: 'No se Encontró',
-      description: 'La Pagina que buscabas no existe',
+      title: "No se Encontró",
+      description: "La Pagina que buscabas no existe",
     };
   }
 }

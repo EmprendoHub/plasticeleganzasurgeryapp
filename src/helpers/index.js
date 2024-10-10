@@ -1,14 +1,14 @@
-import queryString from 'query-string';
-import axios from 'axios';
+import queryString from "query-string";
+import axios from "axios";
 
 export const getProducts = async (searchParams) => {
   const urlParams = {
     keyword: searchParams?.keyword,
     page: searchParams?.page,
     category: searchParams?.category,
-    'rating[gte]': searchParams?.rating,
-    'price[lte]': searchParams?.min,
-    'price[gte]': searchParams?.max,
+    "rating[gte]": searchParams?.rating,
+    "price[lte]": searchParams?.min,
+    "price[gte]": searchParams?.max,
   };
 
   const searchQuery = queryString.stringify(urlParams);
@@ -16,14 +16,14 @@ export const getProducts = async (searchParams) => {
     `${process.env.NEXTAUTH_URL}/api/servicios?${searchQuery}`
   );
   if (!{ data }) {
-    throw new Error('Failed to fetch products');
+    throw new Error("Failed to fetch products");
   }
 
   return data;
 };
 
 export const getOneProduct = async (_id) => {
-  const URL = `${process.env.NEXTAUTH_URL}/api/servicio?${_id}`;
+  const URL = `/api/servicio?${_id}`;
   try {
     //const res = await fetch(URL)
     const res = await fetch(URL);
@@ -36,27 +36,27 @@ export const getOneProduct = async (_id) => {
 };
 
 export const getAllLocalProducts = async () => {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/localservicios`);
+  const res = await fetch(`/api/localservicios`);
   const data = await res.json();
   if (!{ data }) {
-    throw new Error('Failed to fetch local products');
+    throw new Error("Failed to fetch local products");
   }
 
   return data;
 };
 
 export const getAllJsonlProducts = async () => {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/localservicios`);
+  const res = await fetch(`/api/localservicios`);
   const data = await res.json();
   if (!{ data }) {
-    throw new Error('Failed to fetch local products');
+    throw new Error("Failed to fetch local products");
   }
 
   return data;
 };
 
 export const getOneLocalProduct = async (_id) => {
-  const URL = `${process.env.NEXTAUTH_URL}/api/localservicio?${_id}`;
+  const URL = `/api/localservicio?${_id}`;
   try {
     const res = await fetch(URL);
     const data = await res.json();
@@ -68,10 +68,10 @@ export const getOneLocalProduct = async (_id) => {
 
 export const getTrendingProducts = async () => {
   const res = await fetch(
-    'https://fakestoreapiserver.reactbd.com/smarttrending'
+    "https://fakestoreapiserver.reactbd.com/smarttrending"
   );
   if (!res.ok) {
-    throw new Error('Faild to fetch products');
+    throw new Error("Faild to fetch products");
   }
   return res.json();
 };

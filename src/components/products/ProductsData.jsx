@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { IoIosStar, IoMdHeart, IoMdCart } from 'react-icons/io';
-import { Bounce, toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { calculatePercentage } from '@/helpers';
-import FormatedPrice from '@/helpers/FormatedPrice';
-import { motion } from 'framer-motion';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '@/redux/shoppingSlice';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+import Image from "next/image";
+import { IoIosStar, IoMdHeart, IoMdCart } from "react-icons/io";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { calculatePercentage } from "@/helpers";
+import FormatedPrice from "@/helpers/FormatedPrice";
+import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/shoppingSlice";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const ProductsData = ({ item }) => {
   const router = useRouter();
@@ -55,7 +55,7 @@ const ProductsData = ({ item }) => {
                 </div>
               </div>
             ) : (
-              ''
+              ""
             )}
           </div>
         </Link>
@@ -63,29 +63,26 @@ const ProductsData = ({ item }) => {
           {/* star icons
             <div className="flex items-center gap-x-1">{startArray}</div> */}
           <p className="text-white tracking-widest">{item?.title}</p>
-          {item?.deposit > 0 ? (
-            <p className=" text-yellow-600 text-sm">Desde</p>
-          ) : null}
 
           <div className="pricing-class flex fle-row items-center gap-x-2">
             <div className="flex flex-col gap-y-1">
+              {item?.promoPrice ? (
+                <div>
+                  <div className="flex items-center gap-x-2">
+                    <p className="line-through text-sm text-white font-bodyFont">
+                      <FormatedPrice amount={item?.promoPrice} />
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
               <p className="font-semibold text-white tracking-wider text-xl">
                 {item?.deposit > 0 ? (
                   <FormatedPrice amount={item?.deposit} />
                 ) : null}
               </p>
             </div>
-            {item?.promoPrice ? (
-              <div>
-                <div className="flex items-center gap-x-2">
-                  <p className="line-through text-sm text-white font-bodyFont">
-                    <FormatedPrice amount={item?.promoPrice} />
-                  </p>
-                </div>
-              </div>
-            ) : (
-              ''
-            )}
           </div>
           <div className="">
             <p className="text-xs text-yellow-600">Reserva tu Cirugía</p>
@@ -105,12 +102,12 @@ const ProductsData = ({ item }) => {
                   `${item?.title.substring(0, 15)} se agrego al carrito!`,
                   {
                     position: toast.POSITION.TOP_CENTER,
-                    className: 'foo-bar',
-                    theme: 'dark',
+                    className: "foo-bar",
+                    theme: "dark",
                     transition: Bounce,
                   }
                 ) &&
-                router.push('/cart')
+                router.push("/cart")
               }
             >
               Agregar a carrito

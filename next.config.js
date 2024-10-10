@@ -3,9 +3,14 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { hostname: 'minio.salvawebpro.com', protocol: 'https', port: '9000' },
+      { protocol: "https", hostname: "minio.salvawebpro.com", port: "9000" },
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
+      { protocol: "https", hostname: "images.pexels.com" },
+      { protocol: "https", hostname: "unsplash.com" },
+      { protocol: "https", hostname: "pexels.com" },
+      { protocol: "https", hostname: "m.media-amazon.com" },
+      { protocol: "https", hostname: "http2.mlstatic.com" },
     ],
-    domains: ['minio.salvawebpro.com', 'lh3.googleusercontent.com'],
   },
   webpack(config) {
     config.experiments = {
@@ -18,22 +23,22 @@ const nextConfig = {
     return [
       {
         // Routes this applies to
-        source: '/(.*)',
+        source: "/(.*)",
         // Headers
         headers: [
           {
-            key: 'Access-Control-Allow-Origin',
-            value: 'https://eleganzaplasticsurgery.com',
+            key: "Access-Control-Allow-Origin",
+            value: "https://eleganzaplasticsurgery.com",
           },
           // Allows for specific methods accepted
           {
-            key: 'Access-Control-Allow-Methods',
-            value: 'GET, POST, PUT, DELETE, OPTIONS',
+            key: "Access-Control-Allow-Methods",
+            value: "GET, POST, PUT, DELETE, OPTIONS",
           },
           // Allows for specific headers accepted (These are a few standard ones)
           {
-            key: 'Access-Control-Allow-Headers',
-            value: 'Content-Type, Authorization',
+            key: "Access-Control-Allow-Headers",
+            value: "Content-Type, Authorization",
           },
         ],
       },

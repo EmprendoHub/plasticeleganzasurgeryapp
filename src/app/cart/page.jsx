@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import ContainerComponent from '@/components/containers/ContainerComponent';
-import { useDispatch, useSelector } from 'react-redux';
-import CartItem from '@/components/cart/CartItem';
-import { resetCart } from '@/redux/shoppingSlice';
-import PaymentForm from '@/components/cart/PaymentForm';
-import Link from 'next/link';
-import PageTransition from '@/components/transitions/PageTransition';
-import { ToastContainer, Bounce } from 'react-toastify';
+import React from "react";
+import ContainerComponent from "@/components/containers/ContainerComponent";
+import { useDispatch, useSelector } from "react-redux";
+import CartItem from "@/components/cart/CartItem";
+import { resetCart } from "@/redux/shoppingSlice";
+import Link from "next/link";
+import PageTransition from "@/components/transitions/PageTransition";
+import { ToastContainer, Bounce } from "react-toastify";
+import PaypalPaymentForm from "@/components/cart/PaypalPaymentForm";
 
 const CartPage = () => {
   const { productData } = useSelector((state) => state?.shopping);
@@ -34,7 +34,7 @@ const CartPage = () => {
                 </button>
               </div>
               {/* Payment Cart */}
-              <PaymentForm />
+              <PaypalPaymentForm />
             </div>
           </ContainerComponent>
         ) : (
@@ -42,7 +42,7 @@ const CartPage = () => {
             <p className="border-[1px] border-yellow-600 w-full p-2 text-center">
               Tu carrito se encuentra vació.
             </p>
-            <Link href={'/servicios'}>
+            <Link href={"/servicios"}>
               <button className="bg-darkText text-white py-2 px-6 rounded-md hover:bg-yellow-600 duration-500">
                 Regresa a Servicios
               </button>

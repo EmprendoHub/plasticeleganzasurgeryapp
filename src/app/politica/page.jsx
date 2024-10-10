@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const PoliticaPage = () => {
   return (
@@ -87,7 +87,7 @@ const PoliticaPage = () => {
           Privacidad, por favor contáctenos en:
         </p>
         <ul className="list-disc pl-8">
-          <li>Teléfono: +52 (351) 109 1423</li>
+          <li>Teléfono: +52 (351) 120 3448</li>
           <li>
             Dirección: Calz. Zamora-Jacona 716, El Ensueño, 59813 Jacona de
             Plancarte, Mich.

@@ -1,21 +1,21 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { IoMdCart } from 'react-icons/io';
-import { AiOutlineUser, AiOutlineUserDelete } from 'react-icons/ai';
-import { FiLogOut } from 'react-icons/fi';
-import Image from 'next/image';
-import { BsBookmarks } from 'react-icons/bs';
-import MobileMenuComponent from './MobileMenuComponent';
-import LogoComponent from './LogoComponent';
-import { useSession, signIn, signOut } from 'next-auth/react';
-import { useDispatch, useSelector } from 'react-redux';
-import FormatedPrice from '@/helpers/FormatedPrice';
-import { useState, useEffect } from 'react';
-import PageTransition from '../transitions/PageTransition';
+"use client";
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { IoMdCart } from "react-icons/io";
+import { AiOutlineUser, AiOutlineUserDelete } from "react-icons/ai";
+import { FiLogOut } from "react-icons/fi";
+import Image from "next/image";
+import { BsBookmarks } from "react-icons/bs";
+import MobileMenuComponent from "./MobileMenuComponent";
+import LogoComponent from "./LogoComponent";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useDispatch, useSelector } from "react-redux";
+import FormatedPrice from "@/helpers/FormatedPrice";
+import { useState, useEffect } from "react";
+import PageTransition from "../transitions/PageTransition";
 
-const CustomLink = ({ href, title, className = '' }) => {
+const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
   return (
@@ -23,7 +23,7 @@ const CustomLink = ({ href, title, className = '' }) => {
       {title}
       <span
         className={`h-[1px] inline-block bg-gradient-to-r from-amber-200 to-amber-500 group-hover:w-full transition-[width] ease duration-300 absolute left-0 bottom-0 ${
-          router.asPath === href ? 'w-full' : 'w-0'
+          router.asPath === href ? "w-full" : "w-0"
         }`}
       >
         &nbsp;
@@ -85,18 +85,8 @@ const MainMenuComponent = () => {
       </nav>
 
       <nav className="md:hidden m-0 flex-1  flex flex-row py-2.5 px-5 items-center  justify-end gap-7 font-poppins text-sm tracking-widest">
-        {/* Login/Register */}
-        {!session && (
-          <Link
-            href={'/login'}
-            className="cursor-pointer flex justify-center items-center gap-x-1"
-          >
-            <AiOutlineUser className="text-2xl" />
-            <p className="text-sm font-semibold">Inicio/Registro</p>
-          </Link>
-        )}
         {/* Cart Button */}
-        <Link href={'/cart'}>
+        <Link href={"/cart"}>
           <div className="bg-black hover:bg-slate-950 rounded-full text-slate-100 hover:text-white flex items-center justify-center gap-x-1 px-3 py-1.5 border-[1px]  border-black hover:border-yellow-600 cursor-pointer">
             <IoMdCart className="text-xl" />
             <p className="text-sm font-semibold">
@@ -110,7 +100,7 @@ const MainMenuComponent = () => {
         {/*  Order Button */}
         {orderData?.order && orderData?.order.length > 0 && session && (
           <Link
-            href={'/ordenes'}
+            href={"/ordenes"}
             className="flex justify-center items-center gap-x-2"
           >
             <BsBookmarks />

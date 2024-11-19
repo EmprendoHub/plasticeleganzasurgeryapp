@@ -15,7 +15,7 @@ const MainServicesComponent = () => {
           text={`Enfoque en`}
           text2={`Servicio Centrado`}
           text3={`en el Paciente`}
-          className="text-53xl md:text-5xl text-center"
+          className="text-3xl md:text-5xl text-center"
         />
       </motion.div>
       <div className=" w-full">

@@ -11,6 +11,9 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/shoppingSlice";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { PiMoney, PiSealCheckThin } from "react-icons/pi";
+import { BsQuote } from "react-icons/bs";
+import { FaDraft2Digital } from "react-icons/fa";
 
 const ProductsData = ({ item }) => {
   const router = useRouter();
@@ -63,7 +66,6 @@ const ProductsData = ({ item }) => {
           {/* star icons
             <div className="flex items-center gap-x-1">{startArray}</div> */}
           <p className="text-white tracking-widest">{item?.title}</p>
-
           <div className="pricing-class flex fle-row items-center gap-x-2">
             <div className="flex flex-col gap-y-1">
               {item?.promoPrice ? (
@@ -78,6 +80,7 @@ const ProductsData = ({ item }) => {
                 ""
               )}
               <p className="font-semibold text-white tracking-wider text-xl">
+                <span className="text-sm">desde </span>
                 {item?.deposit > 0 ? (
                   <FormatedPrice amount={item?.deposit} />
                 ) : null}
@@ -90,12 +93,12 @@ const ProductsData = ({ item }) => {
               <FormatedPrice amount={item?.price} />
             </p>
           </div>
-          <div className="flex items-center justify-between my-5">
+          <div className="flex flex-wrap gap-2 items-center justify-between my-5">
             {/* add to cart button */}
             <motion.button
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-yellow-600 px-4 py-2 text-sm flex flex-row justify-between gap-x-2 items-center tracking-wide rounded-full text-slate-100 hover:bg-black hover:text-white duration-500"
+              className="bg-yellow-600 px-3 py-2 text-xs flex flex-row justify-between gap-x-2 items-center tracking-wide rounded-full text-slate-100 hover:bg-black hover:text-white duration-500"
               onClick={() =>
                 dispatch(addToCart(item)) &&
                 toast.success(
@@ -110,9 +113,19 @@ const ProductsData = ({ item }) => {
                 router.push("/cart")
               }
             >
-              Agregar a carrito
-              <IoMdCart className="" />
+              Reservar
+              <PiMoney className="" />
             </motion.button>
+            <Link href="https://wa.link/98ox9t" target="_blank">
+              <motion.div
+                whileHover={{ scale: 1.07 }}
+                whileTap={{ scale: 0.9 }}
+                className="bg-yellow-600 px-3 py-2 text-xs flex flex-row justify-between gap-x-2 items-center tracking-wide rounded-full text-slate-100 hover:bg-black hover:text-white duration-500"
+              >
+                Cotizar
+                <PiSealCheckThin className="" />
+              </motion.div>
+            </Link>
           </div>
         </div>
       </motion.div>

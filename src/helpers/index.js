@@ -1,6 +1,20 @@
 import queryString from "query-string";
 import axios from "axios";
 
+export const getCookiesName = () => {
+  let cookieName = "";
+
+  if (process.env.NODE_ENV === "development") {
+    cookieName = "next-auth.csrf-token";
+  }
+
+  if (process.env.NODE_ENV === "production") {
+    cookieName = "__Host-next-auth.csrf-token";
+  }
+
+  return cookieName;
+};
+
 export const getProducts = async (searchParams) => {
   const urlParams = {
     keyword: searchParams?.keyword,

@@ -201,7 +201,7 @@ const FooterComponent = () => {
                         <p className="m-0">{`Calz. Zamora-Jacona 716, `}</p>
                         <p className="m-0">{`2ndo piso, Jacona de Plancarte, Mich.`}</p>
                         <p className="m-0">
-                          Fraccionamiento El Ensueño, cp 59813
+                          Fraccionamiento El Ensueño, CP 59813
                         </p>
                       </span>
                     </div>

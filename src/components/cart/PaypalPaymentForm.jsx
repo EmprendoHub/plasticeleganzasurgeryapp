@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
-import FormatedPrice from "@/helpers/FormatedPrice";
 import { useSelector } from "react-redux";
 useSelector;
 import { useEffect, useState } from "react";
-import { AiOutlineUser } from "react-icons/ai";
-import { IoMdCart } from "react-icons/io";
-import { useSession, signIn } from "next-auth/react";
-import { loadStripe } from "@stripe/stripe-js";
+import { useSession } from "next-auth/react";
 import { useDispatch } from "react-redux";
-import { resetCart, saveOrder } from "@/redux/shoppingSlice";
 import trustfactorimage from "@/images/stripe-badge-transparente.webp";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,12 +50,6 @@ const PaypalPaymentForm = () => {
   }, [productData]);
 
   //=============================== Stripe Payment starts here ============================
-
-  const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-  );
-
-  //=============================== Stripe Payment starts here ============================
   return (
     <div className="w-full bg-white p-10 flex flex-col justify-between ">
       <div className="flex items-center justify-center gap-5">
@@ -71,7 +60,7 @@ const PaypalPaymentForm = () => {
         </Link>
         <Link href={"https://www.paypal.com/ncp/payment/F4KDFWAFCSXV8"}>
           <button className="bg-black text-slate-100 mt-4 py-3 px-6 hover:bg-yellow-700 cursor-pointer duration-500">
-            APARTADO $5,000 MXN
+            APARTADO $10,000 MXN
           </button>
         </Link>
       </div>

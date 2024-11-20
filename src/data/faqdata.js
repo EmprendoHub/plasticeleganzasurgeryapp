@@ -9,7 +9,7 @@ export const accordions = [
     id: 2,
     pregunta: "¿Que incluye el costo del procedimiento?",
     respuesta:
-      "Incluye lo que viene siendo laboratorios, medicamentos, hospital, honorarios médicos, faja y/o brasier postquirúrgico, 5 masajes linfáticos (en caso de ser lipo) y seguimiento médico; todo lo necesario para su comodidad y seguridad.",
+      "Incluye todo lo necesario para su comodidad y seguridad. Laboratorios, medicamentos, hospital, honorarios médicos, faja y/o brasier postquirúrgico, seguimiento 24/7, y en algunos casos incluye también transporte, cámara hiperbárica y/o masajes postquirúrgicos si así lo requiere su procedimiento.",
   },
   {
     id: 3,
@@ -20,12 +20,13 @@ export const accordions = [
   {
     id: 4,
     pregunta: "El traslado va incluido en el costo?",
-    respuesta: "Los traslados son con costo extra.",
+    respuesta:
+      "Los traslados son con costo extra en caso de que su procedimiento no lo incluya.",
   },
   {
     id: 5,
     pregunta: "¿La casa de recuperación es costo extra?",
     respuesta:
-      "La casa de recuperación si incurre un costo adicional. La atención es  directamente con la administración de 'Renacer'.",
+      "Algunos procedimientos ya incluyen la casa de recuperación, es importante solicitar esa información al pedir tu cotización.",
   },
 ];

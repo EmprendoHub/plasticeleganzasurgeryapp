@@ -1,6 +1,6 @@
-import styles from './style.module.scss';
-import { motion } from 'framer-motion';
-import { FaFacebookF, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import styles from "./style.module.scss";
+import { motion } from "framer-motion";
+import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function index() {
   return (
@@ -18,7 +18,7 @@ export default function index() {
             whileTap={{ y: 1 }}
             transition={{ duration: 0.09 }}
             className="[text-decoration:none] rounded bg-ghostwhite flex flex-col p-2 items-center justify-center border-[1px] border-solid border-gray-white"
-            href="https://m.facebook.com/drfranciscorodriguezplasticsurgeon"
+            href="https://www.facebook.com/profile.php?id=61567370504889"
             target="_blank"
           >
             <FaFacebookF color="#ffffff" size={20} />

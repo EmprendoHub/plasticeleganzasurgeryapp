@@ -71,11 +71,12 @@ const FooterComponent = () => {
                   </p>
 
                   <span className=" text-white text-xs ">
-                    La abdominoplastia es mucho más que un procedimiento
-                    estético; es una transformación que le devuelve la seguridad
-                    y autoestima que merece. Durante la cirugía, se elimina el
-                    exceso de piel y grasa en el área abdominal, y se redefine
-                    su figura, logrando un abdomen más firme. Agenda tu cita de
+                    Los implantes mamarios, también conocidos como aumento de
+                    senos, son un procedimiento de cirugía plástica que implica
+                    la inserción de implantes para aumentar el tamaño y mejorar
+                    la forma de los senos. Esto es una opción popular para
+                    personas que desean lograr una apariencia más completa y
+                    simétrica en el área del pecho.. Agenda tu cita de
                     valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
                     tu cirugía agregando al carrito
                   </span>
@@ -137,13 +138,14 @@ const FooterComponent = () => {
                   </p>
 
                   <span className=" text-white text-xs ">
-                    La abdominoplastia es mucho más que un procedimiento
-                    estético; es una transformación que le devuelve la seguridad
-                    y autoestima que merece. Durante la cirugía, se elimina el
-                    exceso de piel y grasa en el área abdominal, y se redefine
-                    su figura, logrando un abdomen más firme. Agenda tu cita de
-                    valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
-                    tu cirugía agregando al carrito
+                    El Mommy Makeover es un término que se utiliza para
+                    describir una combinación de procedimientos estéticos que
+                    están diseñados para ayudar a las mujeres a recuperar su
+                    apariencia previa al embarazo. Puede incluir una variedad de
+                    cirugías, como la abdominoplastia, el aumento de senos, la
+                    liposucción y más, según las metas y necesidades de la
+                    paciente.. Agenda tu cita de valoración mandando WhatsApp al
+                    +52 (351) 120 3448. Aparta tu cirugía agregando al carrito
                   </span>
                   {/* add to cart button */}
                   <motion.button
@@ -232,7 +234,7 @@ const FooterComponent = () => {
                       whileTap={{ y: 1 }}
                       transition={{ duration: 0.09 }}
                       className="[text-decoration:none] rounded bg-ghostwhite flex flex-col p-2 items-center justify-center border-[1px] border-solid border-gray-white"
-                      href="https://m.facebook.com/drfranciscorodriguezplasticsurgeon"
+                      href="https://www.facebook.com/profile.php?id=61567370504889"
                     >
                       <FaFacebookF color="#ffffff" size={20} />
                     </motion.a>

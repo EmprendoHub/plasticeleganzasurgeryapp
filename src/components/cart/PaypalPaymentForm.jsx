@@ -5,7 +5,7 @@ useSelector;
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useDispatch } from "react-redux";
-import trustfactorimage from "@/images/stripe-badge-transparente.webp";
+import trustfactorimage from "@/images/paypal-trust-badges.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -58,7 +58,7 @@ const PaypalPaymentForm = () => {
             APARTADO $500 USD
           </button>
         </Link>
-        <Link href={"https://www.paypal.com/ncp/payment/F4KDFWAFCSXV8"}>
+        <Link href={"https://www.paypal.com/ncp/payment/MAUTVPHHDA9T4"}>
           <button className="bg-black text-slate-100 mt-4 py-3 px-6 hover:bg-yellow-700 cursor-pointer duration-500">
             APARTADO $10,000 MXN
           </button>

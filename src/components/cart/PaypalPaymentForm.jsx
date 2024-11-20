@@ -64,7 +64,7 @@ const PaypalPaymentForm = () => {
           </button>
         </Link>
       </div>
-      <div className="trustfactor-class">
+      <div className="trustfactor-class flex w-full items-center justify-center mt-5">
         <Image
           src={trustfactorimage}
           width={500}

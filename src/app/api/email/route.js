@@ -32,7 +32,7 @@ export async function POST(req) {
     const senderName = "www.eleganzaplasticsurgery.com";
     const bestRegards = "¡Creciendo tu presencia un contacto a la vez!";
     const contact_email = email;
-    const sender_email = "eleganzaplasticsurgery@gmail.com";
+    const sender_email = "ventas.elegabzaplasticsc@gmail.com";
 
     var transporter = nodemailer.createTransport({
       service: "gmail",

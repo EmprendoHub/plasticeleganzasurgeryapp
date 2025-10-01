@@ -231,7 +231,7 @@ const BMICalculator = () => {
               <div className="flex flex-col items-center justify-center h-full text-center">
                 <BiTrendingUp className="h-16 w-16 text-amber-400 mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Your BMI Result
+                  Tus Resultados de IMC
                 </h3>
                 <p className="text-gray-400">
                   Ingresa tus datos para ver tu Índice de Masa Corporal y

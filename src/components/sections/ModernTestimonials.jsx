@@ -68,7 +68,7 @@ const StarRating = ({ rating }) => {
 
 const ModernTestimonials = () => {
   return (
-    <section className="py-20 bg-card max-w-full">
+    <section id="testimonios" className="py-20 bg-card max-w-full">
       <div className="max-w-[1450px] mx-auto ">
         {/* Section Header */}
         <motion.div

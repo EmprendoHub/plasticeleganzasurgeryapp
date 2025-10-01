@@ -6,7 +6,7 @@ import MainContactForm from "../forms/MainContactForm";
 
 const ContactSection = () => {
   return (
-    <section id="" className="py-5 max-w-[1450px]">
+    <section id="contacto" className="py-5 max-w-[1450px]">
       <div className="grid grid-cols-2 md:grid-cols-1 gap-4 items-center">
         {/* Left Column - Content */}
         <motion.div

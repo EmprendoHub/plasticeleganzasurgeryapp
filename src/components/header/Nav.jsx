@@ -25,15 +25,15 @@ const navItems = [
   },
   {
     title: "Preguntas",
-    href: "/faq",
+    href: "/#faq",
   },
   {
     title: "Contacto",
-    href: "/contacto",
+    href: "/#contacto",
   },
   {
     title: "Testimonios",
-    href: "/testimonios",
+    href: "/#testimonios",
   },
   {
     title: "Servicios",

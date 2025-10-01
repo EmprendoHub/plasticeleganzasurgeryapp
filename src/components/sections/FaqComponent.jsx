@@ -8,7 +8,10 @@ import AnimatedText from "../hero/AnimatedText";
 
 const FaqComponent = () => {
   return (
-    <section className="py-10 px-1 w-full h-[100%] md:h-full  flex flex-row  box-border items-center justify-center text-left text-base text-gray-white font-playfair-display">
+    <section
+      id="faq"
+      className="py-10 px-1 w-full h-[100%] md:h-full  flex flex-row  box-border items-center justify-center text-left text-base text-gray-white font-playfair-display"
+    >
       <div className="w-full flex flex-col items-center justify-center gap-10 max-w-[1450px] mx-auto md:mx-5">
         {/* Title Section */}
         <div className="text-center ">

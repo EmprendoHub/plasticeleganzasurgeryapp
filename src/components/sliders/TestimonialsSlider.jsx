@@ -1,14 +1,14 @@
-import React from 'react';
-import { SwiperSlide, Swiper } from 'swiper/react';
-import { testimonials } from '@/data/testimoniolsdata';
-import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import React from "react";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { testimonials } from "@/data/testimoniolsdata";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const TestimonialsSlider = () => {
   return (
@@ -25,7 +25,7 @@ const TestimonialsSlider = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={'auto'}
+          slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -43,10 +43,10 @@ const TestimonialsSlider = () => {
               spaceBetween: 15,
             },
           }}
-          pagination={{ el: '.swiper-pagination', clickable: true }}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
             clickable: true,
           }}
           modules={[Navigation, Pagination, EffectCoverflow]}
@@ -65,7 +65,7 @@ const TestimonialsSlider = () => {
                           quality={100}
                           className="relative flex flex-row top-[21.94px] left-[17.37px] w-[146.29px] h-[32.91px] object-cover"
                           alt=""
-                          src="/stars1.webp"
+                          src="/images/stars1.webp"
                         />
                         <div className="relative flex flex-row  top-[-35.94px] left-[168.23px] text-6xl leading-[146%] font-medium text-gainsboro-100 w-[39.31px] h-[31.09px] text-white">
                           {testimonial.rating}

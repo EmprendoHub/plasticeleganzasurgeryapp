@@ -1,9 +1,9 @@
-'use client';
-import styles from '../header/style.module.scss';
-import { useEffect, useState } from 'react';
-import Navi from './Nav';
-import { AnimatePresence } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+"use client";
+import styles from "../header/style.module.scss";
+import { useEffect, useState } from "react";
+import Navi from "./Nav";
+import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function MobileMenuComponent() {
   const [isActive, SetIsActive] = useState(false);
@@ -11,7 +11,7 @@ export default function MobileMenuComponent() {
 
   useEffect(() => {
     if (isActive) SetIsActive(false);
-  }, [pathname]);
+  }, [pathname, isActive]);
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function MobileMenuComponent() {
           >
             <div
               className={`${styles.burger} ${
-                isActive ? styles.burgerActive : ''
+                isActive ? styles.burgerActive : ""
               }`}
             ></div>
           </div>

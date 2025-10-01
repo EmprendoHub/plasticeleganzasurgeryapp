@@ -1,5 +1,14 @@
 const getAllProducts = async () => {
-  const URL = `${process.env.NNEXT_PUBLIC_EXTAUTH_URL}/api/servicios`;
+  // Skip API call during build time to prevent connection errors
+  if (process.env.NODE_ENV === "production" && !process.env.VERCEL_URL) {
+    return [];
+  }
+
+  const baseURL = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : process.env.NEXT_PUBLIC_NEXTAUTH_URL || "http://localhost:3000";
+
+  const URL = `${baseURL}/api/servicios`;
 
   try {
     const res = await fetch(URL, {
@@ -9,10 +18,15 @@ const getAllProducts = async () => {
       },
     });
 
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+
     const datas = await res.json();
-    return datas.products;
+    return datas.products || [];
   } catch (error) {
-    console.log(error);
+    console.log("Sitemap fetch error:", error);
+    return []; // Return empty array on error to prevent build failure
   }
 };
 

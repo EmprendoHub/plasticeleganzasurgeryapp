@@ -1,7 +1,7 @@
-'use client';
-import AnimatedText from '@/components/texts/AnimatedText';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+"use client";
+import AnimatedText from "@/components/texts/AnimatedText";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const TeamComponemt = () => {
   return (
@@ -29,10 +29,10 @@ const TeamComponemt = () => {
           width={900}
           height={700}
           quality={100}
-          style={{ objectFit: 'contain' }}
+          style={{ objectFit: "contain" }}
           className="relative max-w-full md:max-h-[300px] w-auto mx-auto"
           alt=""
-          src="/DrFranciscoTeam.webp"
+          src="/images/DrFranciscoTeam_2.webp"
         />
       </motion.div>
 
@@ -55,7 +55,7 @@ const TeamComponemt = () => {
             height={20}
             className="flex w-auto h-auto object-cover"
             alt="checkmark"
-            src="/frame.webp"
+            src="/images/frame.webp"
           />
           <div className="relative leading-[146%] font-medium inline-block ">
             4.9/5 Reseñas Positivas
@@ -67,7 +67,7 @@ const TeamComponemt = () => {
             height={20}
             className="flex w-auto h-auto object-cover"
             alt="checkmark"
-            src="/frame.webp"
+            src="/images/frame.webp"
           />
           <div className="relative  leading-[146%] font-medium inline-block ">
             Capacitación Continua
@@ -79,7 +79,7 @@ const TeamComponemt = () => {
             height={20}
             className="flex  w-auto h-auto object-cover"
             alt="checkmark"
-            src="/frame.webp"
+            src="/images/frame.webp"
           />
           <div className="relative  leading-[146%] font-medium inline-block ">
             Tecnología de Punta

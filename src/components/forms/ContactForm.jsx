@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const ContactForm = ({ cookie }) => {
   const [formStatus, setFormStatus] = useState(false);
   const [buttonStatus, setButtonStatus] = useState(false);
+  const [error, setError] = useState("");
   const [data, setData] = useState({
     from_name: "",
     email: "",
@@ -170,7 +171,7 @@ const ContactForm = ({ cookie }) => {
                     width={30}
                     height={30}
                     alt=""
-                    src="/arrow-5.webp"
+                    src="/images/arrow-5.webp"
                   />
                 </div>
               </motion.button>
@@ -184,6 +185,11 @@ const ContactForm = ({ cookie }) => {
           <span className="text-emerald-600">
             El mensaje se envió exitosamente.
           </span>
+        </div>
+      )}
+      {error && (
+        <div className="mt-2">
+          <span className="text-red-500">{error}</span>
         </div>
       )}
       <motion.div

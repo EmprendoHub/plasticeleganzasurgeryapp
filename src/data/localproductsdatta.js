@@ -177,7 +177,7 @@ export const localproducts = [
     deposit: 100000,
   },
   {
-    _id: "65330d7f8151e96c6cf058d9",
+    _id: "74110d7f8151e96c6cf037d1",
     title: "Liposucción & Remodelación de Costilla",
     description:
       "Esta combinación de procedimientos estéticos incluye tanto la liposucción como la abdominoplastia. La liposucción se utiliza para eliminar depósitos de grasa no deseados en diversas áreas del cuerpo, mientras que la abdominoplastia se enfoca en mejorar la apariencia del abdomen al eliminar el exceso de piel y grasa, y restaurar la firmeza de los músculos abdominales.",

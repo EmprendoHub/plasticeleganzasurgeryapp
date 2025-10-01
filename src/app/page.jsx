@@ -1,17 +1,57 @@
-import ViewResultsComponent from '@/components/ctas/ViewResultsComponent';
-import HeroComponent from '@/components/hero/HeroComponent';
-import FaqComponent from '@/components/sections/FaqComponent';
-import PageTransition from '@/components/transitions/PageTransition';
-import { ToastContainer } from 'react-toastify';
+import ModernHero from "@/components/hero/ModernHero";
+import ServicesOverview from "@/components/sections/ServicesOverview";
+import ModernTestimonials from "@/components/sections/ModernTestimonials";
+import PageTransition from "@/components/transitions/PageTransition";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ProceduresSlider from "@/components/sections/BeforeAfterSlider";
+import Financing from "@/components/sections/Finacing";
+import FaqComponent from "@/components/sections/FaqComponent";
+import ContactSection from "@/components/sections/ContactSection";
+import BMICalculator from "@/components/sections/BMICalculator";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-24 md:p-10 sm:p-0">
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 overflow-x-hidden">
       <PageTransition />
-      <HeroComponent />
-      <ViewResultsComponent />
+
+      {/* Hero Section */}
+      <ModernHero />
+
+      {/* Before and After Section */}
+      <ProceduresSlider />
+
+      {/* BMI Calculator Section */}
+      <BMICalculator />
+
+      {/* Financing Section */}
+      <Financing />
+
+      {/* Services Overview */}
+      <ServicesOverview />
+
+      {/* Testimonials */}
+      <ModernTestimonials />
+
+      {/* FAQ */}
       <FaqComponent />
-      <ToastContainer autoClose={1000} />
+
+      {/* Contact/CTA Section */}
+      <ContactSection />
+
+      {/* Toast Container */}
+      <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </main>
   );
 }

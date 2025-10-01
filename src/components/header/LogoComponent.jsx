@@ -1,14 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
-import mainlogoimage from '@/images/Eleganza_Plastic_Surgery_Logo_wide_small.png';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import mainlogoimage from "@/images/Eleganza_Plastic_Surgery_Logo_wide_small.png";
+import Link from "next/link";
 
 const LogoComponent = () => {
   return (
-    <Link href={'/'}>
+    <Link href={"/"}>
       <Image
-        width={150}
-        height={30}
+        width={250}
+        height={60}
         priority={true}
         className=""
         alt="Eleganza Plastic Surgery"

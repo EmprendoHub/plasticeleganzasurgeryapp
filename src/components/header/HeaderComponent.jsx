@@ -1,15 +1,12 @@
-'use client';
-import HeaderContainerComponent from '../containers/HeaderContainerComponent';
-import MainMenuComponent from './MainMenuComponent';
-import MobileMenuComponent from './MobileMenuComponent';
+"use client";
+import HeaderContainerComponent from "../containers/HeaderContainerComponent";
+import MainMenuComponent from "./MainMenuComponent";
 
 const HeaderComponent = () => {
   return (
     <>
       <HeaderContainerComponent>
         <MainMenuComponent />
-
-        <MobileMenuComponent />
       </HeaderContainerComponent>
     </>
   );

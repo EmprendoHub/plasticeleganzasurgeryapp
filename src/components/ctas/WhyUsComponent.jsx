@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
-import AnimatedText from '../texts/AnimatedText';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useEffect, useRef } from "react";
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import AnimatedText from "../texts/AnimatedText";
+import Image from "next/image";
+import Link from "next/link";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -20,7 +20,7 @@ const AnimatedNumbers = ({ value }) => {
   }, [isInView, value, motionValue]);
 
   useEffect(() => {
-    springValue.on('change', (latest) => {
+    springValue.on("change", (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed(0);
       }
@@ -91,7 +91,7 @@ const WhyUsComponent = () => {
           quality={100}
           className="max-w-[100%]  relative my-0 z-[1] lg:top-[15px] w-auto h-auto"
           alt="Eleganza Plastic Surgery"
-          src="/frame-79.webp"
+          src="/images/frame-79.webp"
         />
       </motion.div>
     </section>

@@ -1,19 +1,19 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IoMdCart } from "react-icons/io";
-import { AiOutlineUser, AiOutlineUserDelete } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import Image from "next/image";
 import { BsBookmarks } from "react-icons/bs";
-import MobileMenuComponent from "./MobileMenuComponent";
 import LogoComponent from "./LogoComponent";
-import { useSession, signIn, signOut } from "next-auth/react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSession, signOut } from "next-auth/react";
+import { useSelector } from "react-redux";
 import FormatedPrice from "@/helpers/FormatedPrice";
 import { useState, useEffect } from "react";
-import PageTransition from "../transitions/PageTransition";
+import { AnimatePresence } from "framer-motion";
+import Navi from "./Nav";
+import { BiLogoWhatsapp, BiMenu } from "react-icons/bi";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -33,10 +33,9 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const MainMenuComponent = () => {
-  const dispatch = useDispatch();
   const { data: session } = useSession();
   const isLoggedIn = Boolean(session?.user);
-
+  const [isActive, SetIsActive] = useState(false);
   const { productData, orderData } = useSelector((state) => state.shopping);
 
   const [totalAmt, setTotalAmt] = useState(0);
@@ -51,10 +50,36 @@ const MainMenuComponent = () => {
   }, [productData]);
 
   return (
-    <header className="self-stretch flex flex-row px-1 box-border items-center justify-start sticky mx-auto ">
-      <PageTransition />
-      {/* Logo  */}
-      <LogoComponent />
+    <header className="self-stretch flex flex-row px-1 box-border items-center justify-between sticky mx-auto ">
+      <div className="flex gap-3 items-center">
+        {/* Menu Button */}
+        <div className={` hidden md:block`}>
+          <div
+            className={`border border-amber-400 rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300`}
+          >
+            <div
+              onClick={() => {
+                SetIsActive(!isActive);
+              }}
+              className={""}
+            >
+              <BiMenu className="text-2xl transition-all duration-300 cursor-pointer" />
+            </div>
+          </div>
+        </div>
+        <AnimatePresence mode="wait">
+          {isActive && <Navi SetIsActive={SetIsActive} />}
+        </AnimatePresence>
+        {/* Logo  */}
+        <LogoComponent />
+      </div>
+
+      {/* Whatsapp Button */}
+      <div className="hidden md:block border border-amber-400 rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300">
+        <Link href="https://wa.link/98ox9t" className="flex items-center">
+          <BiLogoWhatsapp className="text-2xl" />
+        </Link>
+      </div>
       {/* Navigation left */}
       <nav className="md:hidden m-0 flex-1  flex flex-row py-2.5 px-5 items-center justify-start gap-7 text-sm tracking-widest ">
         <CustomLink

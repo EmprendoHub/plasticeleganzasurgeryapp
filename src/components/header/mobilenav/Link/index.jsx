@@ -1,9 +1,14 @@
-import styles from './style.module.scss';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { slide, scale } from '../../anim';
+import styles from "./style.module.scss";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { slide, scale } from "../../anim";
 
-export default function Index({ data, isActive, setSelectedIndicator }) {
+export default function Index({
+  data,
+  isActive,
+  setSelectedIndicator,
+  SetIsActive,
+}) {
   const { title, href, index } = data;
 
   return (
@@ -20,10 +25,12 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
     >
       <motion.div
         variants={scale}
-        animate={isActive ? 'open' : 'closed'}
+        animate={isActive ? "open" : "closed"}
         className={styles.indicator}
       ></motion.div>
-      <Link href={href}>{title}</Link>
+      <Link href={href} onClick={() => SetIsActive(false)}>
+        {title}
+      </Link>
     </motion.div>
   );
 }

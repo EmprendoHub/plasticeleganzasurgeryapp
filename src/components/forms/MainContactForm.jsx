@@ -106,7 +106,7 @@ const MainContactForm = ({ cookie }) => {
           transition={{ duration: 0.5 }}
           method="post"
           onSubmit={handleFormSubmit}
-          className={`flex flex-col gap-y-2 md:w-full md:px-5 w-full mx-auto`}
+          className={`flex flex-col gap-y-2 w-full mx-auto`}
         >
           <div className="flex flex-row gap-x-2">
             <input

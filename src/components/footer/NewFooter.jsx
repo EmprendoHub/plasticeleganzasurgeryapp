@@ -2,12 +2,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { IoMdCart } from "react-icons/io";
 import { useDispatch } from "react-redux";
-import { addToCart } from "@/redux/shoppingSlice";
 import { useRouter } from "next/navigation";
-import { getOneLocalProduct } from "../../app/_actions";
+import mainlogoimage from "@/images/Eleganza_Plastic_Surgery_Logo_wide_small.png";
 import LogoComponent from "../header/LogoComponent";
+import NewsletterContactForm from "../forms/NewsLetterContactForm";
+import Image from "next/image";
 
 const NewFooter = () => {
   const dispatch = useDispatch();
@@ -19,16 +19,23 @@ const NewFooter = () => {
           <div className=" flex flex-row md:flex-col justify-between gap-x-12 items-start text-left text-5xl text-whitesmoke-300 font-body-regular-400  md:gap-[50px] sm:flex-col sm:gap-[50px] sm:flex-[unset] sm:self-stretch">
             {/* Site Column */}
             <div className="w-full flex flex-col">
-              {/* Contact Column */}
+              {/* Company Info Column */}
               <div className="flex flex-col pr-5 items-start justify-start gap-[20px] text-base mb-10">
-                <LogoComponent />
+                <Image
+                  width={350}
+                  height={90}
+                  priority={true}
+                  className=""
+                  alt="Eleganza Plastic Surgery"
+                  src={mainlogoimage}
+                />
                 <motion.p
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="m-0 font-headerFont relative text-3xl leading-[32px] font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500 "
+                  className="m-0 font-headerFont relative text-4xl leading-[45px] font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500 "
                 >
-                  Contáctenos
+                  La mejor experiencia en cirugía plástica de Zamora
                 </motion.p>
                 <motion.div
                   initial={{ y: 30, opacity: 0 }}
@@ -51,11 +58,8 @@ const NewFooter = () => {
                   >
                     <div className="relative leading-[24px] flex items-end ">
                       <span className="[line-break:anywhere] w-full">
-                        <p className="m-0">{`Calz. Zamora-Jacona 716, `}</p>
-                        <p className="m-0">{`2ndo piso, Jacona de Plancarte, Mich.`}</p>
-                        <p className="m-0">
-                          Fraccionamiento El Ensueño, CP 59813
-                        </p>
+                        <p className="m-0">{`Calz. Zamora-Jacona 716 2ndo piso`}</p>
+                        <p className="m-0">{`Jacona de Plancarte, Michoacan Fracc. El Ensueño, CP 59813`}</p>
                       </span>
                     </div>
                   </Link>
@@ -76,9 +80,9 @@ const NewFooter = () => {
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.9 }}
-                  className="mt-4 gap-3 flex flex-row sm:flex-col items-center justify-between"
+                  className="mt-4 gap-6 flex flex-row sm:flex-col items-center justify-between"
                 >
-                  <div className="flex flex-row gap-3">
+                  <div className="flex flex-row gap-6">
                     <motion.a
                       target="_blank"
                       whileHover={{ y: -4 }}
@@ -112,320 +116,48 @@ const NewFooter = () => {
                   </div>
                 </motion.div>
               </div>
-              <motion.p
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="m-0 mb-4 relative font-headerFont text-3xl leading-[32px] font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500  "
-              >
-                Sitio
-              </motion.p>
-              <motion.ul
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7 }}
-                className="text-base list-none text-start pl-0 "
-              >
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Inicio
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/acerca"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Acerca
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/faq"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Preguntas
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/testimonios"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Testimonios
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/servicios"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Procedimientos
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/contacto"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Contacto
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/servicios"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Reserva tu Cirugía
-                  </Link>
-                </motion.li>
-                <motion.li
-                  whileHover={{ y: -4 }}
-                  whileTap={{ y: 1 }}
-                  transition={{ duration: 0.09 }}
-                  className="mb-4"
-                >
-                  <Link
-                    href={"/galeria"}
-                    className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                  >
-                    Galería de Imágenes
-                  </Link>
-                </motion.li>
-              </motion.ul>
-              {/* Legal Column */}
-              <div>
-                <motion.p
-                  initial={{ y: 30, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="m-0 relative text-3xl font-headerFont mb-4 leading-[32px] font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500  mt-5"
-                >
-                  Polizas
-                </motion.p>
-                <motion.ul
-                  initial={{ y: 30, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.7 }}
-                  className="text-base gap-y-4 list-none text-start pl-0 "
-                >
-                  <motion.li
-                    whileHover={{ y: -4 }}
-                    whileTap={{ y: 1 }}
-                    transition={{ duration: 0.09 }}
-                    className="mb-4"
-                  >
-                    <Link
-                      href={"/terminos"}
-                      className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                    >
-                      Términos de Uso
-                    </Link>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ y: -4 }}
-                    whileTap={{ y: 1 }}
-                    transition={{ duration: 0.09 }}
-                    className="mb-4"
-                  >
-                    <Link
-                      href={"/politica"}
-                      className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
-                    >
-                      Política de Privacidad
-                    </Link>
-                  </motion.li>
-                </motion.ul>
-              </div>
             </div>
-            {/* Services Column */}
-            <div className=" flex flex-col w-full mb-10">
-              <motion.p
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className=" m-0 mb-4 font-headerFont relative text-3xl font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500 "
+            {/* Newsletter Column */}
+            <NewsletterContactForm />
+          </div>
+          {/* Legal Column */}
+          <div className="w-full flex md:flex-col justify-between mt-10">
+            <motion.ul
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7 }}
+              className="text-sm gap-x-4 flex items-center text-start pl-0 "
+            >
+              <motion.li
+                whileHover={{ y: -4 }}
+                whileTap={{ y: 1 }}
+                transition={{ duration: 0.09 }}
+                className="mb-4"
               >
-                Servicios
-              </motion.p>
-              <motion.ul
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7 }}
-                className="text-base list-none text-start pl-0 "
+                <Link
+                  href={"/terminos"}
+                  className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
+                >
+                  Términos de Uso
+                </Link>
+              </motion.li>
+              <motion.li
+                whileHover={{ y: -4 }}
+                whileTap={{ y: 1 }}
+                transition={{ duration: 0.09 }}
+                className="mb-4"
               >
-                <li className="mb-4">
-                  <p className="text-white  duration-200 [decoration-none] left-0 no-underline ">
-                    Abdominoplastía
-                  </p>
-
-                  <span className=" text-white text-xs ">
-                    La abdominoplastia es mucho más que un procedimiento
-                    estético; es una transformación que le devuelve la seguridad
-                    y autoestima que merece. Durante la cirugía, se elimina el
-                    exceso de piel y grasa en el área abdominal, y se redefine
-                    su figura, logrando un abdomen más firme. Agenda tu cita de
-                    valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
-                    tu cirugía agregando al carrito
-                  </span>
-                  {/* add to cart button */}
-                  <motion.button
-                    whileHover={{ scale: 1.07 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="bg-gold-gradient flex flex-row items-center justify-between px-4 py-2 text-sm gap-x-4 tracking-wide rounded-full text-black hover:bg-darkText  duration-500 mt-5 mb-10"
-                    onClick={async () => {
-                      const product = await getOneLocalProduct(
-                        "653310c18d22988a4a58dff4"
-                      );
-
-                      dispatch(addToCart(product)) && router.push("/cart");
-                    }}
-                  >
-                    Agregar a carrito
-                    <span className="text-xl text-slate-100 w-12 flex items-center justify-center group-hover:bg-black duration-200  rounded-full py-2">
-                      <IoMdCart />
-                    </span>
-                  </motion.button>
-                </li>
-                <li className="mb-">
-                  <p className="text-white  duration-200 [decoration-none] left-0 no-underline ">
-                    Implantes Mamarios
-                  </p>
-
-                  <span className=" text-white text-xs ">
-                    Los implantes mamarios, también conocidos como aumento de
-                    senos, son un procedimiento de cirugía plástica que implica
-                    la inserción de implantes para aumentar el tamaño y mejorar
-                    la forma de los senos. Esto es una opción popular para
-                    personas que desean lograr una apariencia más completa y
-                    simétrica en el área del pecho.. Agenda tu cita de
-                    valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
-                    tu cirugía agregando al carrito
-                  </span>
-                  {/* add to cart button */}
-                  <motion.button
-                    whileHover={{ scale: 1.07 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="bg-gold-gradient flex flex-row items-center justify-between px-4 py-2 text-sm gap-x-4 tracking-wide rounded-full text-black hover:bg-darkText  duration-500 mt-5 mb-10"
-                    onClick={async () => {
-                      const product = await getOneLocalProduct(
-                        "65330d7f8151e96c6cf058d8"
-                      );
-                      dispatch(addToCart(product)) && router.push("/cart");
-                    }}
-                  >
-                    Agregar a carrito
-                    <span className="text-xl text-slate-100 w-12 flex items-center justify-center group-hover:bg-black duration-200  rounded-full py-2">
-                      <IoMdCart />
-                    </span>
-                  </motion.button>
-                </li>
-                <li className="mb-4">
-                  <p className="text-white  duration-200 [decoration-none] left-0 no-underline ">
-                    Liposucción
-                  </p>
-
-                  <span className=" text-white text-xs leading-none">
-                    Si ha estado buscando una manera de realzar su figura de
-                    forma natural, la liposucción puede ser una opción a
-                    considerar. Es un procedimiento que ayuda a redefinir esas
-                    áreas que han sido difíciles de moldear, brindándole un
-                    contorno más equilibrado y armonioso. Es una manera de
-                    sentirse más a gusto con su cuerpo, potenciando su confianza
-                    y bienestar. Agenda tu cita de valoración mandando WhatsApp
-                    al +52 (351) 120 3448. Aparta tu cirugía agregando al
-                    carrito
-                  </span>
-                  {/* add to cart button */}
-                  <motion.button
-                    whileHover={{ scale: 1.07 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="bg-gold-gradient flex flex-row items-center justify-between px-4 py-2 text-sm gap-x-4 tracking-wide rounded-full text-black hover:bg-darkText  duration-500 mt-5 mb-10"
-                    onClick={async () => {
-                      const product = await getOneLocalProduct(
-                        "65330d7f8151e96c6cf058d6"
-                      );
-                      dispatch(addToCart(product)) && router.push("/cart");
-                    }}
-                  >
-                    Agregar a carrito
-                    <span className="text-xl text-slate-100 w-12 flex items-center justify-center group-hover:bg-black duration-200  rounded-full py-2">
-                      <IoMdCart />
-                    </span>
-                  </motion.button>
-                </li>
-                <li className="mb-4">
-                  <p className="text-white  duration-200 [decoration-none] left-0 no-underline ">
-                    Mommy Makeover
-                  </p>
-
-                  <span className=" text-white text-xs ">
-                    El Mommy Makeover es un término que se utiliza para
-                    describir una combinación de procedimientos estéticos que
-                    están diseñados para ayudar a las mujeres a recuperar su
-                    apariencia previa al embarazo. Puede incluir una variedad de
-                    cirugías, como la abdominoplastia, el aumento de senos, la
-                    liposucción y más, según las metas y necesidades de la
-                    paciente.. Agenda tu cita de valoración mandando WhatsApp al
-                    +52 (351) 120 3448. Aparta tu cirugía agregando al carrito
-                  </span>
-                  {/* add to cart button */}
-                  <motion.button
-                    whileHover={{ scale: 1.07 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="bg-gold-gradient flex flex-row items-center justify-between px-4 py-2 text-sm gap-x-4 tracking-wide rounded-full text-black hover:bg-darkText  duration-500 mt-5 mb-10"
-                    onClick={async () => {
-                      const product = await getOneLocalProduct(
-                        "65330d7f8151e96c6cf058dc"
-                      );
-                      dispatch(addToCart(product)) && router.push("/cart");
-                    }}
-                  >
-                    Agregar a carrito
-                    <span className="text-xl text-slate-100 w-12 flex items-center justify-center group-hover:bg-black duration-200  rounded-full py-2">
-                      <IoMdCart />
-                    </span>
-                  </motion.button>
-                </li>
-              </motion.ul>
+                <Link
+                  href={"/politica"}
+                  className="text-white  cursor-pointer duration-200 [decoration-none] left-0 no-underline "
+                >
+                  Política de Privacidad
+                </Link>
+              </motion.li>
+            </motion.ul>
+            <div className="text-sm text-white">
+              © {new Date().getFullYear()}. Todos los derechos reservados.
+              Cirugía Plástica Eleganza.
             </div>
           </div>
         </footer>

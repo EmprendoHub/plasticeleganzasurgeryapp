@@ -9,6 +9,7 @@ import {
   BiBrain,
 } from "react-icons/bi";
 import Image from "next/image";
+import Link from "next/link";
 
 const BMICalculator = () => {
   const [formData, setFormData] = useState({
@@ -302,13 +303,15 @@ const BMICalculator = () => {
                 </div>
 
                 {/* CTA */}
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full mt-6 bg-white/10 text-white border border-amber-400 py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-black transition-all duration-300 font-medium"
-                >
-                  Agendar Consulta
-                </motion.button>
+                <Link href="/#reservar" className="w-full">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full mt-6 bg-white/10 text-white border border-amber-400 py-3 px-6 rounded-lg hover:bg-amber-400 hover:text-black transition-all duration-300 font-medium"
+                  >
+                    Agendar Consulta
+                  </motion.button>
+                </Link>
               </motion.div>
             )}
           </motion.div>

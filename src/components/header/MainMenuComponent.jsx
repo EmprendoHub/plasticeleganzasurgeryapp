@@ -88,12 +88,12 @@ const MainMenuComponent = () => {
           className="text-gray-white no-underline font-bold"
         />
         <CustomLink
-          href="/faq"
+          href="/#faq"
           title={`PREGUNTAS`}
           className="text-gray-white no-underline"
         />
         <CustomLink
-          href="/testimonios"
+          href="/#testimonios"
           title={`TESTIMONIOS`}
           className="text-gray-white no-underline"
         />
@@ -103,7 +103,7 @@ const MainMenuComponent = () => {
           className="text-gray-white no-underline"
         />
         <CustomLink
-          href="/contacto"
+          href="/#contacto"
           title={`CONTACTO`}
           className="text-gray-white no-underline"
         />

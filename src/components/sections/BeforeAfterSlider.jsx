@@ -96,7 +96,7 @@ const ProceduresSlider = () => {
             <AnimatedText
               text="Antes y después de la "
               text2="Cirugía Plástica"
-              className="text-white text-5xl font-headerFont md:text-3xl sm:text-2xl mb-6"
+              className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
             />
           </motion.div>
         </div>
@@ -109,19 +109,19 @@ const ProceduresSlider = () => {
           className="relative"
         >
           <div className="embla overflow-hidden" ref={emblaRef}>
-            <div className="embla__container flex">
+            <div className="embla__container flex gap-3">
               {sliderData.map((item, index) => (
                 <div
                   key={item.id}
                   className="embla__slide flex-none w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2"
                 >
-                  <motion.div className="rounded-2xl h-[500px] w-full transition-all duration-1000 ease-out">
-                    <div className="relative rounded-xl overflow-hidden h-full w-full">
+                  <motion.div className="rounded-2xl  transition-all duration-1000 ease-out">
+                    <div className="relative rounded-xl overflow-hidden h-[350px] w-[350px]">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover"
+                        className="object-cover grayscale"
                         priority={index < 3}
                       />
                     </div>
@@ -197,7 +197,7 @@ const ProceduresSlider = () => {
         .embla {
           max-width: 100%;
           margin: 0 auto;
-          min-height: 500px;
+          min-height: 350px;
         }
 
         .embla__container {
@@ -205,7 +205,7 @@ const ProceduresSlider = () => {
           display: flex;
           touch-action: pan-y;
           margin-left: -1rem;
-          min-height: 500px;
+          min-height: 350px;
         }
 
         .embla__slide {
@@ -213,7 +213,7 @@ const ProceduresSlider = () => {
           min-width: 0;
           padding-left: 1rem;
           position: relative;
-          min-height: 500px;
+          min-height: 350px;
         }
 
         @media (max-width: 640px) {

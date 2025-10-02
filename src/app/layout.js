@@ -1,17 +1,17 @@
-import './css/globals.css';
-import MainLayout from '../components/layouts/MainLayout';
-import Script from 'next/script';
+import "./css/globals.css";
+import MainLayout from "../components/layouts/MainLayout";
+import Script from "next/script";
 
 export const metadata = {
-  metadataBase: new URL('https://www.eleganzaplasticsurgery.com/'),
+  metadataBase: new URL("https://www.eleganzaplasticsurgery.com/"),
   title: {
-    default: 'Eleganza Plastic Surgery | Cirugía Plástica',
+    default: "Eleganza Plastic Surgery | Cirugía Plástica",
     template: `%s | Eleganza Plastic Surgery`,
   },
-  description: 'Eleganza Plastic Surgery cirugía plástica en Zamora Michoacan',
+  description: "Eleganza Plastic Surgery cirugía plástica en Zamora Michoacan",
 };
 
-const GTM_ID = 'GTM-N4382WJN';
+const GTM_ID = "GTM-N4382WJN";
 
 export default function RootLayout({ children }) {
   return (
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         })(window,document,'script','dataLayer','${GTM_ID}');
         `}
       </Script>
-      <body className="main-body-class w-full bg-black-gradient min-h-full">
+      <body className="main-body-class w-full bg-gray-100 min-h-full">
         <MainLayout>{children}</MainLayout>
         <noscript
           dangerouslySetInnerHTML={{

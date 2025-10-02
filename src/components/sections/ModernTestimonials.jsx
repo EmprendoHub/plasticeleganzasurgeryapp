@@ -88,11 +88,11 @@ const ModernTestimonials = () => {
               <AnimatedText
                 text="Reseñas de "
                 text2="Nuestros Pacientes"
-                className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
+                className=" text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
               />
             </motion.div>
           </div>
-          <p className="text-xl  max-w-3xl mx-auto text-gray-300">
+          <p className="text-xl  max-w-3xl mx-auto text-gray-600">
             Historias reales de pacientes reales que eligieron Eleganza Cirugía
             Plástica para su viaje de transformación.
           </p>
@@ -101,14 +101,14 @@ const ModernTestimonials = () => {
           <div className="flex flex-wrap justify-center items-center gap-8 mt-8 ">
             <div className="flex items-center space-x-2">
               <StarRating rating={5} />
-              <span className="font-semibold text-lg text-gray-300">
+              <span className="font-semibold text-lg text-gray-800">
                 4.9/5 Reseñas
               </span>
             </div>
-            <div className="text-lg font-semibold text-gray-300">
+            <div className="text-lg font-semibold text-gray-800">
               500+ Pacientes Felices
             </div>
-            <div className="text-lg font-semibold text-gray-300">
+            <div className="text-lg font-semibold text-gray-800">
               10+ Años de Experiencia
             </div>
           </div>
@@ -166,7 +166,7 @@ const ModernTestimonials = () => {
                   </div>
 
                   {/* Testimonial Text */}
-                  <p className="text-white mb-6 leading-relaxed italic">
+                  <p className="text-gray-800 mb-6 leading-relaxed italic">
                     &ldquo;{testimonial.text}&rdquo;
                   </p>
 
@@ -174,13 +174,13 @@ const ModernTestimonials = () => {
                   <div className="border-t pt-6">
                     <div className="flex items-center justify-between">
                       <div>
-                        <h4 className="font-bold text-white text-lg">
+                        <h4 className="font-bold text-gray-800 text-lg">
                           {testimonial.name}
                         </h4>
                         <p className="text-yellow-600 font-medium">
                           {testimonial.procedure}
                         </p>
-                        <p className="text-gray-300 text-sm">
+                        <p className="text-gray-600 text-sm">
                           {testimonial.location}
                         </p>
                       </div>
@@ -245,11 +245,11 @@ const ModernTestimonials = () => {
               <AnimatedText
                 text="Únete a Nuestra Familia de"
                 text2="Pacientes Satisfechos"
-                className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
+                className="text-gray-800 text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
               />
             </motion.div>
           </div>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-600 mb-6">
             Programa tu consulta y comienza tu viaje de transformación hoy
           </p>
           <Link

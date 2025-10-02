@@ -10,7 +10,7 @@ const FaqComponent = () => {
   return (
     <section
       id="faq"
-      className="py-10 px-1 w-full h-[100%] md:h-full  flex flex-row  box-border items-center justify-center text-left text-base text-gray-white font-playfair-display"
+      className="py-10 px-1 w-full h-[100%] md:h-full  flex flex-row  box-border items-center justify-center text-left text-base text-gray-white font-playfair-display mb-10"
     >
       <div className="w-full flex flex-col items-center justify-center gap-10 max-w-[1450px] mx-auto md:mx-5">
         {/* Title Section */}
@@ -23,7 +23,7 @@ const FaqComponent = () => {
             <AnimatedText
               text="Preguntas "
               text2="Frecuentes"
-              className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
+              className="text-gray-800 text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
             />
           </motion.div>
         </div>
@@ -39,7 +39,7 @@ const FaqComponent = () => {
             return (
               <div
                 key={id}
-                className="text-white cursor-pointer  rounded-t-md rounded-b-none bg-transparent shadow-[0px_32px_64px_rgba(57,_20,_0,_0.04)] p-2 border-t border-yellow-600"
+                className="text-gray-800 cursor-pointer  rounded-t-md rounded-b-none bg-transparent shadow-[0px_32px_64px_rgba(57,_20,_0,_0.04)] p-2 border-t border-yellow-600"
               >
                 <Accordion
                   pregunta={pregunta}
@@ -53,7 +53,7 @@ const FaqComponent = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="relative leading-[32px] font-text inline-block shrink-0 text-gray-300 font-bodyFont text-base"
+          className="relative leading-[32px] font-text inline-block shrink-0 text-gray-600 font-bodyFont text-base"
         >
           ¿Tienes dudas adicionales? mándanos un mensaje o agenda una consulta y
           aclaramos tus preguntas.

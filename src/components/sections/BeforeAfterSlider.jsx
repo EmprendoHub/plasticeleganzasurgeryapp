@@ -84,7 +84,7 @@ const ProceduresSlider = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="w-full py-20 px-5 bg-gradient-to-b from-gray-950 to-black">
+    <section className="w-full py-20 px-5 bg-gray-100 ">
       <div className="max-w-[1450px] mx-auto">
         {/* Title Section */}
         <div className="text-center mb-16">
@@ -96,7 +96,7 @@ const ProceduresSlider = () => {
             <AnimatedText
               text="Antes y después de la "
               text2="Cirugía Plástica"
-              className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
+              className=" text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
             />
           </motion.div>
         </div>

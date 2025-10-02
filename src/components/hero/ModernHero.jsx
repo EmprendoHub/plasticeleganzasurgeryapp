@@ -66,7 +66,7 @@ const ModernHero = () => {
   return (
     <section
       id="reservar"
-      className="relative max-w-[1450px] w-full h-auto rounded-xl flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden "
+      className="relative max-w-[1450px] w-full h-auto rounded-xl flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden mb-10"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

@@ -90,7 +90,7 @@ const BMICalculator = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 max-w-[1450px] w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 mx-auto">
+    <section className="py-16 sm:py-20 max-w-[1450px] w-full bg-gray-100 mx-auto">
       {/* Header */}
       <motion.div
         initial={{ y: 30, opacity: 0 }}
@@ -100,24 +100,24 @@ const BMICalculator = () => {
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <BiCalculator className="text-amber-400 h-8 w-8" />
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-headerFont font-bold ">
             Calculadora de IMC
           </h2>
         </div>
-        <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-800 text-lg max-w-2xl mx-auto leading-relaxed">
           Calcula tu Índice de Masa Corporal para entender tu categoría de peso
           y explorar cómo nuestros procedimientos pueden ayudarte a lograr tus
           objetivos corporales ideales.
         </p>
       </motion.div>
-      <div className="gap-8 mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-1">
+      <div className="gap-8 mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-1  ">
         <div className="grid grid-cols-1 gap-8">
           {/* Calculator Form */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+            className="bg-black backdrop-blur-sm rounded-2xl p-6 border border-white/20"
           >
             <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
               <BiInfoCircle className="h-5 w-5 text-amber-400" />
@@ -226,7 +226,7 @@ const BMICalculator = () => {
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+            className="bg-black backdrop-blur-sm rounded-2xl p-6 border border-white/20"
           >
             {!showResult ? (
               <div className="flex flex-col items-center justify-center h-full text-center">
@@ -318,7 +318,7 @@ const BMICalculator = () => {
         </div>
         <div className="flex flex-col items-center justify-start gap-8">
           {/* BMI Image */}
-          <div className="relative w-full h-[492px] sm:h-80 md:h-96 rounded-lg overflow-hidden">
+          <div className="relative w-full h-[492px] sm:h-80 md:h-96 rounded-lg  bg-black overflow-hidden">
             <Image
               src={"/sections/BMI.webp"}
               alt="BMI Image"
@@ -332,7 +332,7 @@ const BMICalculator = () => {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full bg-white/5 rounded-2xl p-6 border border-white/10 flex flex-col items-center"
+            className="w-full bg-black rounded-2xl p-6 border border-white/10 flex flex-col items-center"
           >
             <BiBrain className="h-16 w-16 text-amber-400 mb-4" />
             <h3 className="text-xl font-semibold text-white mb-4 text-center">

@@ -717,7 +717,7 @@ const ProductDetails = ({ ctx, product }) => {
           transition={{ duration: 0.8 }}
           className="mt-20"
         >
-          <div className="bg-gradient-to-r from-gray-900 to-black rounded-2xl p-12 text-center text-white">
+          <div className="bg-black rounded-2xl p-12 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">
               Centro de Última Generación
             </h2>

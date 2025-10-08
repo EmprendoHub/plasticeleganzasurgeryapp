@@ -16,10 +16,10 @@ const CartPage = () => {
   return (
     <div>
       <PageTransition />
-      <ContainerComponent className="p-12 md:p-4 sm:p-2 w-[80%] md:w-[95%] h-full">
+      <ContainerComponent className="p-12 md:p-4 sm:p-2 w-[80%] md:w-[95%] h-full bg-black rounded-2xl mt-5 mb-5">
         {productData.length > 0 ? (
           <ContainerComponent>
-            <h2 className="text-2xl font-semibold mb-2 text-white">
+            <h2 className="text-2xl font-semibold mb-2 text-white font-bodyFont">
               Carrito de Compra
             </h2>
             <div className="flex flex-col gap-5">

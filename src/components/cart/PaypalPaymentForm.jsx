@@ -51,7 +51,7 @@ const PaypalPaymentForm = () => {
 
   //=============================== Stripe Payment starts here ============================
   return (
-    <div className="w-full bg-white p-10 flex flex-col justify-between ">
+    <div className="w-full bg-white/20 rounded-2xl p-10 flex flex-col justify-between ">
       <div className="flex items-center justify-center gap-5">
         <Link href={"https://www.paypal.com/ncp/payment/Z5YRN5QSSNMEN"}>
           <button className="bg-black text-slate-100 mt-4 py-3 px-6 hover:bg-yellow-700 cursor-pointer duration-500">

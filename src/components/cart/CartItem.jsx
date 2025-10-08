@@ -13,8 +13,8 @@ const CartItem = () => {
 
   return (
     <div className="flex flex-col gap-y-2">
-      <div className="text-xs font-normal md:hidden inline-flex items-center justify-between   bg-gray-200 py-3 px-5">
-        <p className="text-black w-1/4">Procedimiento</p>
+      <div className="text-xs font-normal sm:hidden inline-flex items-center justify-between rounded-xl bg-gray-200 py-3 px-5">
+        <p className=" w-1/4">Procedimiento</p>
         <p className="flex items-center justify-start w-1/4">
           Deposito Inicial
         </p>
@@ -26,7 +26,7 @@ const CartItem = () => {
         {productData?.map((item) => (
           <div
             key={item?._id}
-            className="w-full bg-gray-300 p-4 flex sm:flex-col flex-row items-center gap-4"
+            className="w-full rounded-2xl bg-gray-300/30 p-4 flex sm:flex-col flex-row items-center gap-4 "
           >
             <div className="flex items-center gap-x-3 w-full ">
               <span
@@ -45,19 +45,19 @@ const CartItem = () => {
             </div>
             {/* Model Value */}
             <div className="w-full flex  justify-start sm:pl-7 ">
-              <p className="text-lg font-semibold">
+              <p className="text-lg text-white font-semibold">
                 <FormatedPrice amount={item?.quantity * item?.deposit} />
               </p>
             </div>
             {/* Title and description */}
-            <div className="w-full flex  justify-start sm:pl-7">
+            <div className="w-full flex text-white justify-start sm:pl-7">
               <div className="flex flex-col">
                 <p className="text-lg font-semibold justify-start">
                   {`${item?.title.substring(0, 25)}...`}
                 </p>
               </div>
             </div>
-            <div className="flex gap-x-3 border-[1px] border-slate-300 py-2 px-7 w-auto sm:w-full">
+            <div className="flex gap-x-3 text-white py-2 px-7 w-auto sm:w-full">
               <p className="text-md ">
                 <FormatedPrice amount={item?.price} />
               </p>

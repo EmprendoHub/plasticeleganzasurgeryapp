@@ -44,7 +44,7 @@ const CartPage = () => {
             </p>
             <Link href={"/servicios"}>
               <button className="bg-darkText text-white py-2 px-6 rounded-md hover:bg-yellow-600 duration-500">
-                Regresa a Servicios
+                Regresa a Procedimientos
               </button>
             </Link>
           </div>

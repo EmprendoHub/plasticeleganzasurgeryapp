@@ -1,12 +1,12 @@
-'use client';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { UseSelector } from 'react-redux/es/hooks/useSelector';
-import ContainerComponent from '../containers/ContainerComponent';
-import Image from 'next/image';
-import FormatedPrice from '@/helpers/FormatedPrice';
-import { resetOrder } from '@/redux/shoppingSlice';
-import Link from 'next/link';
+"use client";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { UseSelector } from "react-redux/es/hooks/useSelector";
+import ContainerComponent from "../containers/ContainerComponent";
+import Image from "next/image";
+import FormatedPrice from "@/helpers/FormatedPrice";
+import { resetOrder } from "@/redux/shoppingSlice";
+import Link from "next/link";
 
 const OrderDetailsComponent = () => {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ const OrderDetailsComponent = () => {
       {orderData?.order && orderData?.order.length > 0 ? (
         <ContainerComponent
           className={
-            'mx-auto bg-gray-200 px-10 pt-10 pb-20 flex flex-col rounded-md'
+            "mx-auto bg-gray-200 px-10 pt-10 pb-20 flex flex-col rounded-md"
           }
         >
           <div className="title-items-class justify-start">
@@ -79,7 +79,7 @@ const OrderDetailsComponent = () => {
               <p>Detalles de Pago</p>
             </div>
             <p>
-              Pago recibido{' '}
+              Pago recibido{" "}
               <span className="text-xl font-semibold">
                 <FormatedPrice amount={totalAmnt} />
               </span>
@@ -98,9 +98,9 @@ const OrderDetailsComponent = () => {
           <p className=" text-black text-4xl font-headerFont text-center">
             No tienes ordenes pendientes
           </p>
-          <Link href={'/servicios'}>
+          <Link href={"/servicios"}>
             <button className="bg-black text-slate-100 w-44 h-12 rounded-full text-base font-semibold hover:bg-yellow-600 duration-500">
-              Ir a Servicios
+              Procedimientos
             </button>
           </Link>
         </div>

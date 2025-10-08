@@ -5,7 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRef } from "react";
 import { Bounce, toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const ContactForm = ({ cookie }) => {
   const [formStatus, setFormStatus] = useState(false);

@@ -110,7 +110,7 @@ const AnimatedText = ({
               </motion.span>
             ))
           : ""}
-        <span className="text-white">{``}</span>
+        <span className="text-black">{``}</span>
 
         {text3
           ? text3.split(" ").map((word3, index) => (
@@ -123,7 +123,7 @@ const AnimatedText = ({
               </motion.span>
             ))
           : ""}
-        <span className="text-gray-300">{text3 ? ` ` : ""}</span>
+        <span className="text-gray-800">{text3 ? ` ` : ""}</span>
         {descrp
           ? descrp.split(" ").map((des, index) => (
               <motion.span

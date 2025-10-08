@@ -9,7 +9,7 @@ const MainServicesComponent = () => {
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex justify-center flex-row text-left mb-10 sm:mb-2 text-white text-6xl font-headerFont"
+        className="flex justify-center flex-row text-left mb-10 sm:mb-2 text-6xl font-headerFont"
       >
         <AnimatedText
           text={`Enfoque en`}
@@ -24,7 +24,7 @@ const MainServicesComponent = () => {
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="text-center w-full top-0 flex flex-col py-0 pr-[40px] md:pr-[0px] box-border items-start justify-start gap-[48px] text-whitesmoke-100 md:self-stretch mb-[40px] text-white font-bodyFont -tracking-widest leading-7 text-xl"
+            className="text-center w-full top-0 flex flex-col py-0 pr-[40px] md:pr-[0px] box-border items-start justify-start gap-[48px] text-whitesmoke-100 md:self-stretch mb-[40px] font-bodyFont -tracking-widest leading-7 text-xl"
           >
             <AnimatedText
               descrp={`Estamos sumamente orgullosos de ofrecer un valor verdaderamente inigualable a los pacientes a quienes servimos con un aprecio sincero. Nuestros cirujanos plásticos, todos certificados por La Asociación Mexicana de Cirugía Plástica, comprenden plenamente que cada individuo trae consigo necesidades y metas completamente únicas. Poseen un vasto cúmulo de experiencia y un don innato para la expresión artística que les capacita de manera excepcional para concretar los resultados anhelados.`}

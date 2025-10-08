@@ -50,41 +50,33 @@ const MainMenuComponent = () => {
   }, [productData]);
 
   return (
-    <header className="self-stretch flex flex-row px-1 box-border items-center justify-between sticky mx-auto ">
+    <header className="self-stretch flex w-full flex-row px-1 box-border items-center justify-between sticky max-w-[1450px]">
       <div className="flex gap-3 items-center">
         {/* Menu Button */}
         <div className={` hidden md:block`}>
           <div
-            className={`border border-amber-400 rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300`}
+            onClick={() => {
+              SetIsActive(!isActive);
+            }}
+            className={
+              "border border-black rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300"
+            }
           >
-            <div
-              onClick={() => {
-                SetIsActive(!isActive);
-              }}
-              className={""}
-            >
-              <BiMenu className="text-2xl transition-all duration-300 cursor-pointer" />
-            </div>
+            <BiMenu className="text-2xl transition-all duration-300 cursor-pointer" />
           </div>
         </div>
         <AnimatePresence mode="wait">
           {isActive && <Navi SetIsActive={SetIsActive} />}
         </AnimatePresence>
         {/* Logo  */}
-        <LogoComponent />
+        <LogoComponent className="w-[200px] bg-black rounded-xl" />
       </div>
 
-      {/* Whatsapp Button */}
-      <div className="hidden md:block border border-amber-400 rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300">
-        <Link href="https://wa.link/98ox9t" className="flex items-center">
-          <BiLogoWhatsapp className="text-2xl" />
-        </Link>
-      </div>
       {/* Navigation left */}
       <nav className="md:hidden m-0 flex-1  flex flex-row py-2.5 px-5 items-center justify-start gap-7 text-sm tracking-widest ">
         <CustomLink
           href="/servicios"
-          title={`SERVICIOS`}
+          title={`PROCEDIMIENTOS`}
           className="text-gray-white no-underline font-bold"
         />
         <CustomLink
@@ -109,8 +101,17 @@ const MainMenuComponent = () => {
         />
       </nav>
 
-      <nav className="md:hidden m-0 flex-1  flex flex-row py-2.5 px-5 items-center  justify-end gap-7 font-poppins text-sm tracking-widest">
-        {/* Cart Button */}
+      {/* Whatsapp Button */}
+      <div className="">
+        <Link
+          href="https://wa.link/98ox9t"
+          className=" items-center block border border-black rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300"
+        >
+          <BiLogoWhatsapp className="text-2xl" />
+        </Link>
+      </div>
+
+      {/* <nav className="md:hidden m-0 flex-1  flex flex-row py-2.5 px-5 items-center  justify-end gap-7 font-poppins text-sm tracking-widest">
         <Link href={"/cart"}>
           <div className="bg-black hover:bg-slate-950 rounded-full text-slate-100 hover:text-white flex items-center justify-center gap-x-1 px-3 py-1.5 border-[1px]  border-black hover:border-yellow-600 cursor-pointer">
             <IoMdCart className="text-xl" />
@@ -122,7 +123,6 @@ const MainMenuComponent = () => {
             </span>
           </div>
         </Link>
-        {/*  Order Button */}
         {orderData?.order && orderData?.order.length > 0 && session && (
           <Link
             href={"/ordenes"}
@@ -133,7 +133,6 @@ const MainMenuComponent = () => {
           </Link>
         )}
 
-        {/* User Image */}
         {isLoggedIn && session?.user?.image ? (
           <Image
             src={session?.user?.image}
@@ -152,7 +151,6 @@ const MainMenuComponent = () => {
           )
         )}
 
-        {/** Logout Button */}
         {isLoggedIn && (
           <div
             onClick={() => signOut()}
@@ -162,7 +160,7 @@ const MainMenuComponent = () => {
             <p className="text-sm font-semibold">Salir</p>
           </div>
         )}
-      </nav>
+      </nav> */}
     </header>
   );
 };

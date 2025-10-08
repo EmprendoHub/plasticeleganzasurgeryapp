@@ -1,7 +1,7 @@
-'use client';
-import { useScroll, motion } from 'framer-motion';
-import { useRef } from 'react';
-import LiIcon from './LiIcon';
+"use client";
+import { useScroll, motion } from "framer-motion";
+import { useRef } from "react";
+import LiIcon from "./LiIcon";
 
 const Details = ({ place, years, position, description }) => {
   const ref = useRef(null);
@@ -15,7 +15,7 @@ const Details = ({ place, years, position, description }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: 'spring' }}
+        transition={{ duration: 0.5, type: "spring" }}
         className=""
       >
         <h3 className="relative tracking-[0.04em] font-medium text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 mb-3 to-yellow-600 text-5xl sm:text-3xl font-headerFont">
@@ -38,17 +38,17 @@ const EducationComponent = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'center start'],
+    offset: ["start end", "center start"],
   });
   return (
-    <section className=" mt-11 pt-0  box-border items-center justify-center gap-[39px] text-left text-5xl text-lightgray-200 font-poppins">
+    <section className="bg-black pt-11  box-border items-center justify-center gap-[39px] text-left text-5xl text-lightgray-200 font-poppins">
       <h2 className="m-0 relative text-inherit items-center text-center mb-11 tracking-[0.03em] leading-[123%] font-semibold font-inherit text-white font-headerFont">
         Experiencia y Formación
       </h2>
 
       <div
         ref={ref}
-        className="w-[60%] sm:w-[90%]  mx-auto relative left-0 mb-40"
+        className="w-[60%] sm:w-[90%]  mx-auto relative left-0 ṕb-20"
       >
         <motion.div
           style={{ scaleY: scrollYProgress }}

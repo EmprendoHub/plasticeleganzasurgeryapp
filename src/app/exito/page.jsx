@@ -1,7 +1,7 @@
-import React from 'react';
-import ContainerComponent from '@/components/containers/ContainerComponent';
-import Link from 'next/link';
-import PageTransition from '@/components/transitions/PageTransition';
+import React from "react";
+import ContainerComponent from "@/components/containers/ContainerComponent";
+import Link from "next/link";
+import PageTransition from "@/components/transitions/PageTransition";
 
 const SuccessPage = () => {
   return (
@@ -9,7 +9,7 @@ const SuccessPage = () => {
       <PageTransition />
       <ContainerComponent
         className={
-          'bg-white h-[80vh] flex items-center justify-center text-center mx-auto'
+          "bg-white h-[80vh] flex items-center justify-center text-center mx-auto"
         }
       >
         <div>
@@ -22,14 +22,14 @@ const SuccessPage = () => {
             servicios.
           </p>
           <div className="flex items-center gap-x-5 justify-center mt-10">
-            <Link href={'/ordenes'}>
+            <Link href={"/ordenes"}>
               <button className="bg-black text-slate-100 w-44 h-12 rounded-full text-base font-semibold hover:bg-yellow-600 duration-500">
                 Ver Ordenes
               </button>
             </Link>
-            <Link href={'/servicios'}>
+            <Link href={"/servicios"}>
               <button className="bg-black text-slate-100 w-44 h-12 rounded-full text-base font-semibold hover:bg-yellow-600 duration-500">
-                Ir a Servicios
+                Procedimientos
               </button>
             </Link>
           </div>

@@ -3,7 +3,7 @@ import ServicesOverview from "@/components/sections/ServicesOverview";
 import ModernTestimonials from "@/components/sections/ModernTestimonials";
 import PageTransition from "@/components/transitions/PageTransition";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 import ProceduresSlider from "@/components/sections/BeforeAfterSlider";
 import Financing from "@/components/sections/Finacing";
 import FaqComponent from "@/components/sections/FaqComponent";

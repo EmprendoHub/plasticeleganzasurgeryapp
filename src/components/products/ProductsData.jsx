@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { IoIosStar, IoMdHeart, IoMdCart } from "react-icons/io";
 import { Bounce, toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 import { calculatePercentage } from "@/helpers";
 import FormatedPrice from "@/helpers/FormatedPrice";
 import { motion } from "framer-motion";
@@ -12,8 +12,6 @@ import { addToCart } from "@/redux/shoppingSlice";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PiMoney, PiSealCheckThin } from "react-icons/pi";
-import { BsQuote } from "react-icons/bs";
-import { FaDraft2Digital } from "react-icons/fa";
 
 const ProductsData = ({ item }) => {
   const router = useRouter();

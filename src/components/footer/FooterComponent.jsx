@@ -24,7 +24,7 @@ const FooterComponent = () => {
                 transition={{ duration: 0.5 }}
                 className=" m-0 mb-4 font-headerFont relative text-3xl font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500 "
               >
-                Servicios
+                Procedimientos
               </motion.p>
               <motion.ul
                 initial={{ y: 30, opacity: 0 }}

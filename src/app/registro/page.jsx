@@ -1,53 +1,53 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { signIn } from 'next-auth/react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import ContainerComponent from '@/components/containers/ContainerComponent';
-import LogoComponent from '@/components/header/LogoComponent';
-import { IoLogoGoogle } from 'react-icons/io';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { signIn } from "next-auth/react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import ContainerComponent from "@/components/containers/ContainerComponent";
+import LogoComponent from "@/components/header/LogoComponent";
+import { IoLogoGoogle } from "react-icons/io";
+import Link from "next/link";
 
 const Register = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (email === '') {
-      toast.error('Por favor ingresa un email!');
+    if (email === "") {
+      toast.error("Por favor ingresa un email!");
       return;
     }
-    if (password === '') {
-      toast.error('Por favor ingresa una contraseña!');
+    if (password === "") {
+      toast.error("Por favor ingresa una contraseña!");
       return;
     }
 
     if (password.length < 6) {
-      toast.error('La contraseña debe contener 6 caracteres como mínimo');
+      toast.error("La contraseña debe contener 6 caracteres como mínimo");
       return;
     }
 
     try {
       const res = await fetch(`/api/register`, {
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify({ username, email, password }),
       });
 
       if (res.ok) {
-        toast.success('Successfully registered the user');
+        toast.success("Successfully registered the user");
         setTimeout(() => {
           signIn();
         }, 1500);
         return;
       } else {
-        toast.error('Se produjo un error al registrarse');
+        toast.error("Se produjo un error al registrarse");
         return;
       }
     } catch (error) {
@@ -67,7 +67,7 @@ const Register = () => {
         <button
           className="w-full text-black bg-slate-300 duration-500 ease-in-out hover:text-white hover:bg-stone-900 mb-4 flex flex-row gap-4  items-center py-4 justify-center"
           onClick={() => {
-            signIn('google');
+            signIn("google");
           }}
         >
           <IoLogoGoogle />

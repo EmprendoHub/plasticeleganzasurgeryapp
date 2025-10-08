@@ -13,8 +13,8 @@ const NewFooter = () => {
   const dispatch = useDispatch();
   const router = useRouter();
   return (
-    <section className="max-w-[1450px] mx-auto self-stretch  bg-black py-10 px-5 box-border items-center justify-start [text-decoration:none]">
-      <div className="w-full  justify-between py-[60px] items-start  md:w-auto md:gap-[0px]">
+    <section className="flex mx-auto self-stretch  bg-black py-10 px-5 box-border items-center justify-center [text-decoration:none]">
+      <div className="w-full max-w-[1450px] justify-between py-[60px] items-start  md:w-auto md:gap-[0px]">
         <footer className="">
           <div className=" flex flex-row md:flex-col justify-between gap-x-12 items-start text-left text-5xl text-whitesmoke-300 font-body-regular-400  md:gap-[50px] sm:flex-col sm:gap-[50px] sm:flex-[unset] sm:self-stretch">
             {/* Site Column */}

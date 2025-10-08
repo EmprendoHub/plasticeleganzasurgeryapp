@@ -4,15 +4,13 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "@/components/header/anim";
 import CustomLink from "@/components/header/mobilenav/Link";
-import Link from "next/link";
 import Curve from "@/components/header/mobilenav/Curve";
 import Footer from "@/components/header/mobilenav/Footer";
-import FormatedPrice from "@/helpers/FormatedPrice";
-import { IoMdCart } from "react-icons/io";
 import { useSelector } from "react-redux";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { useEffect } from "react";
+import LogoComponent from "./LogoComponent";
 
 const navItems = [
   {
@@ -36,7 +34,7 @@ const navItems = [
     href: "/#testimonios",
   },
   {
-    title: "Servicios",
+    title: "Procedimientos",
     href: "/servicios",
   },
   {
@@ -74,7 +72,7 @@ export default function Navi({ SetIsActive }) {
       className={`${styles.menu} bg-transparent `}
     >
       {/* Cart Button */}
-      <Link href={"/cart"} className=" absolute left-5 top-10">
+      {/* <Link href={"/cart"} className=" absolute left-5 top-10">
         <div className="bg-black mt-5 hover:bg-stone-950 rounded-full text-slate-100 hover:text-white flex items-center justify-start gap-x-1 px-3 py-1.5 border-[1px]  border-black hover:border-yellow-600 cursor-pointer duration-500 ease-in-out">
           <IoMdCart className="text-lg" />
           <p className="text-base font-semibold">
@@ -85,16 +83,16 @@ export default function Navi({ SetIsActive }) {
             {productData ? productData?.length : 0}
           </span>
         </div>
-      </Link>
-      <div
-        className={`${styles.body} pl-16 pr-10 pb-5 pt-20 bg-black-gradient`}
-      >
+      </Link> */}
+
+      <div className={`${styles.body} pl-16 pr-10 pb-5 pt-0 bg-black-gradient`}>
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
           }}
           className={" gap-y-4 "}
         >
+          <LogoComponent className="w-[200px]" />
           <div className={`${styles.header}`}></div>
           <div className="text-xl font-headerFont pt-10 flex flex-col gap-y-6">
             {navItems.map((data, index) => {

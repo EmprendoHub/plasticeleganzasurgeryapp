@@ -1,62 +1,62 @@
-'use client';
-import React, { useEffect } from 'react';
-import ContainerComponent from '@/components/containers/ContainerComponent';
-import Link from 'next/link';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { signIn, useSession } from 'next-auth/react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { IoLogoGoogle } from 'react-icons/io';
-import LogoComponent from '@/components/header/LogoComponent';
-import PageTransition from '@/components/transitions/PageTransition';
+"use client";
+import React, { useEffect } from "react";
+import ContainerComponent from "@/components/containers/ContainerComponent";
+import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import { IoLogoGoogle } from "react-icons/io";
+import LogoComponent from "@/components/header/LogoComponent";
+import PageTransition from "@/components/transitions/PageTransition";
 
 const Login = () => {
   const session = useSession();
   const router = useRouter();
 
   useEffect(() => {
-    if (session?.status === 'authenticated') {
-      router.replace('/cart');
+    if (session?.status === "authenticated") {
+      router.replace("/cart");
     }
   }, [session, router]);
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const toastConfig = {
     position: toast.POSITION.TOP_CENTER,
-    className: 'foo-bar',
-    theme: 'dark',
+    className: "foo-bar",
+    theme: "dark",
     autoClose: 500,
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (email === '') {
-      toast.error('Por favor ingresa tu email!', toastConfig);
+    if (email === "") {
+      toast.error("Por favor ingresa tu email!", toastConfig);
       return;
     }
-    if (password === '') {
-      toast.error('Por favor ingresa tu contraseña!');
+    if (password === "") {
+      toast.error("Por favor ingresa tu contraseña!");
       return;
     }
 
     if (password.length < 6) {
-      toast.error('La contraseña debe contener 6 caracteres como mínimo');
+      toast.error("La contraseña debe contener 6 caracteres como mínimo");
       return;
     }
     try {
-      const res = await signIn('credentials', {
+      const res = await signIn("credentials", {
         email,
         password,
         redirect: false,
       });
 
       if (res?.error == null) {
-        router.push('/servicios');
+        router.push("/servicios");
       } else {
-        toast.error('Se produjo un error al iniciar sesión');
+        toast.error("Se produjo un error al iniciar sesión");
       }
     } catch (error) {
       console.log(error);
@@ -75,7 +75,7 @@ const Login = () => {
           <button
             className="w-full text-black bg-slate-300 duration-500 ease-in-out hover:text-white hover:bg-stone-900 mb-4 flex flex-row gap-4 items-center py-4 justify-center"
             onClick={() => {
-              signIn('google');
+              signIn("google");
             }}
           >
             <IoLogoGoogle />

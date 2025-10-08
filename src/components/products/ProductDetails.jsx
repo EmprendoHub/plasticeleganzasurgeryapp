@@ -533,7 +533,7 @@ const ProductDetails = ({ ctx, product }) => {
               Agenda tu consulta gratuita y descubre cómo podemos ayudarte a
               lograr tus objetivos estéticos
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex md:flex-col flex-row gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -736,7 +736,7 @@ const ProductDetails = ({ ctx, product }) => {
               <p className="text-gray-300 mb-6">
                 ¡Mantente informado y conserva tus resultados!
               </p>
-              <div className="flex gap-2">
+              <div className="flex md:flex-col gap-2">
                 <input
                   type="email"
                   placeholder="Tu email"

@@ -46,7 +46,7 @@ const CartItem = () => {
             {/* Model Value */}
             <div className="w-full flex  justify-start sm:pl-7 ">
               <p className="text-lg font-semibold">
-                <FormatedPrice amount={item?.quantity * item?.price} />
+                <FormatedPrice amount={item?.quantity * item?.deposit} />
               </p>
             </div>
             {/* Title and description */}
@@ -55,14 +55,11 @@ const CartItem = () => {
                 <p className="text-lg font-semibold justify-start">
                   {`${item?.title.substring(0, 25)}...`}
                 </p>
-                <p className="text-md justify-start">
-                  {`${item?.description.substring(0, 25)}...`}
-                </p>
               </div>
             </div>
             <div className="flex gap-x-3 border-[1px] border-slate-300 py-2 px-7 w-auto sm:w-full">
               <p className="text-md ">
-                <FormatedPrice amount={item?.deposit} />
+                <FormatedPrice amount={item?.price} />
               </p>
             </div>
           </div>

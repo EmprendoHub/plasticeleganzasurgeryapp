@@ -286,6 +286,7 @@ export const localproducts = [
     description:
       "La abdominoplastia es un procedimiento quirúrgico que elimina el exceso de piel y grasa del abdomen.",
     promoPrice: 0,
+    price: 90000,
     published: true,
     imageUrls: [
       "https://minio.salvawebpro.com:9000/drfrancisco/servicios/Abdominoplastia1.webp",
@@ -293,7 +294,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 90000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf058d8",
@@ -440,7 +441,7 @@ export const localproducts = [
     description:
       "Los implantes mamarios, también conocidos como aumento de senos, son un procedimiento de cirugía plástica que implica la inserción de implantes para aumentar el tamaño y mejorar la forma de los senos. Esto es una opción popular para personas que desean lograr una apariencia más completa y simétrica en el área del pecho.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 65000,
     isPromo: false,
     promoPrice: 0,
     published: true,
@@ -450,7 +451,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 65000,
+    deposit: 10000,
   },
 
   {
@@ -600,7 +601,7 @@ export const localproducts = [
     description:
       "El levantamiento de busto sin implantes es un procedimiento que se enfoca en corregir la flacidez y la caída de los senos sin la inserción de implantes mamarios. Esto se logra mediante la eliminación del exceso de piel y la redistribución del tejido mamario para obtener una apariencia más firme y juvenil.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 85000,
     isPromo: false,
     promoPrice: 0,
     published: true,
@@ -610,7 +611,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 85000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf058d9",
@@ -776,7 +777,7 @@ export const localproducts = [
     description:
       "Este procedimiento combina un levantamiento de senos con la inserción de implantes mamarios. El levantamiento de busto se realiza para corregir la flacidez y la caída de los senos, mientras que los implantes se utilizan para aumentar el volumen y mejorar la forma de los senos. Es una excelente opción para quienes desean rejuvenecer y realzar sus senos.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 100000,
     isPromo: false,
     promoPrice: 0,
     published: true,
@@ -786,7 +787,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 100000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96u6cf058d8",
@@ -933,14 +934,14 @@ export const localproducts = [
     description:
       "La reducción de senos, también conocida como mamoplastia de reducción, es un procedimiento quirúrgico que reduce el tamaño de los senos y remodela el tejido mamario.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 85000,
     isPromo: false,
     promoPrice: 0,
     published: true,
     imageUrls: ["/images/cirugia-reduccion-senos-03ed908e.jpeg"],
     rating: 5,
     quantity: 1,
-    deposit: 85000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151k96c6cf058db",
@@ -1082,7 +1083,7 @@ export const localproducts = [
     description:
       "La rinoplastia, también conocida como cirugía de nariz, es un procedimiento quirúrgico que se utiliza para mejorar la apariencia y la función de la nariz. Puede incluir la reducción del tamaño, la corrección de la forma, y la mejora de la función respiratoria. La rinoplastia es un procedimiento personalizado que se adapta a las necesidades individuales del paciente.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 55000,
     isPromo: false,
     promoPrice: 0,
     published: true,
@@ -1092,7 +1093,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 55000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf057ce",
@@ -1231,14 +1232,14 @@ export const localproducts = [
     description:
       "La blefaroplastia, también conocida como cirugía de párpados, es un procedimiento quirúrgico que corrige el exceso de piel, grasa y músculo de los párpados.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 40000,
     isPromo: false,
     promoPrice: 0,
     published: true,
     imageUrls: ["/images/Blefaroplastia.jpeg"],
     rating: 5,
     quantity: 1,
-    deposit: 40000,
+    deposit: 10000,
   },
 
   {
@@ -1382,7 +1383,7 @@ export const localproducts = [
     description:
       "Esta combinación de procedimientos estéticos incluye tanto la liposucción como la abdominoplastia. La liposucción se utiliza para eliminar depósitos de grasa no deseados en diversas áreas del cuerpo, mientras que la abdominoplastia se enfoca en mejorar la apariencia del abdomen al eliminar el exceso de piel y grasa, y restaurar la firmeza de los músculos abdominales.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 153000,
     isPromo: true,
     promoPrice: 180000,
     published: true,
@@ -1392,7 +1393,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 153000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf058c8",
@@ -1533,7 +1534,7 @@ export const localproducts = [
     description:
       "Esta combinación de procedimientos estéticos incluye tanto la liposucción como la abdominoplastia. La liposucción se utiliza para eliminar depósitos de grasa no deseados en diversas áreas del cuerpo, mientras que la abdominoplastia se enfoca en mejorar la apariencia del abdomen al eliminar el exceso de piel y grasa, y restaurar la firmeza de los músculos abdominales.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 100000,
     isPromo: true,
     promoPrice: 140000,
     published: true,
@@ -1543,7 +1544,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 100000,
+    deposit: 10000,
   },
   {
     _id: "74110d7f8151e96c6cf037d1",
@@ -1684,7 +1685,7 @@ export const localproducts = [
     description:
       "Esta combinación de procedimientos estéticos incluye tanto la liposucción como la abdominoplastia. La liposucción se utiliza para eliminar depósitos de grasa no deseados en diversas áreas del cuerpo, mientras que la abdominoplastia se enfoca en mejorar la apariencia del abdomen al eliminar el exceso de piel y grasa, y restaurar la firmeza de los músculos abdominales.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 115000,
     isPromo: true,
     promoPrice: 160000,
     published: true,
@@ -1694,7 +1695,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 115000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf058e1",
@@ -1835,7 +1836,7 @@ export const localproducts = [
     description:
       "Esta combinación de procedimientos estéticos incluye tanto la liposucción como la abdominoplastia. La liposucción se utiliza para eliminar depósitos de grasa no deseados en diversas áreas del cuerpo, mientras que la abdominoplastia se enfoca en mejorar la apariencia del abdomen al eliminar el exceso de piel y grasa, y restaurar la firmeza de los músculos abdominales.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 125000,
     isPromo: true,
     promoPrice: 170000,
     published: true,
@@ -1845,7 +1846,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 125000,
+    deposit: 10000,
   },
   {
     _id: "65330d7f8151e96c6cf058dc",
@@ -1986,7 +1987,7 @@ export const localproducts = [
     description:
       "El Mommy Makeover es un término que se utiliza para describir una combinación de procedimientos estéticos que están diseñados para ayudar a las mujeres a recuperar su apariencia previa al embarazo. Puede incluir una variedad de cirugías, como la abdominoplastia, el aumento de senos, la liposucción y más, según las metas y necesidades de la paciente.",
     category: "Cirugía Estética",
-    price: 10000,
+    price: 198500,
     isPromo: true,
     promoPrice: 300000,
     published: true,
@@ -1996,7 +1997,7 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 198500,
+    deposit: 10000,
   },
 
   {
@@ -2145,6 +2146,6 @@ export const localproducts = [
     ],
     rating: 5,
     quantity: 1,
-    deposit: 0,
+    deposit: 10000,
   },
 ];

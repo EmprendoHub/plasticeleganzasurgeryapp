@@ -160,7 +160,7 @@ const ProductDetails = ({ ctx, product }) => {
                       </span>
                       <span className="text-red-600 font-semibold">
                         {calculatePercentage(
-                          product?.deposit,
+                          product?.price,
                           product?.promoPrice
                         )}
                         % DESCUENTO

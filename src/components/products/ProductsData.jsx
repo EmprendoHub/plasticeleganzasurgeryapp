@@ -79,8 +79,8 @@ const ProductsData = ({ item }) => {
               )}
               <p className="font-semibold text-white tracking-wider text-xl">
                 <span className="text-sm">desde </span>
-                {item?.deposit > 0 ? (
-                  <FormatedPrice amount={item?.deposit} />
+                {item?.price > 0 ? (
+                  <FormatedPrice amount={item?.price} />
                 ) : null}
               </p>
             </div>
@@ -88,7 +88,7 @@ const ProductsData = ({ item }) => {
           <div className="">
             <p className="text-xs text-yellow-600">Reserva tu Cirugía</p>
             <p className="font-semibold text-white tracking-wider">
-              <FormatedPrice amount={item?.price} />
+              <FormatedPrice amount={item?.deposit} />
             </p>
           </div>
           <div className="flex flex-wrap gap-2 items-center justify-between my-5">

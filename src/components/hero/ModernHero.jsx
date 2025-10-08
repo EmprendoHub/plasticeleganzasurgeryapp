@@ -81,7 +81,7 @@ const ModernHero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative flex items-center justify-center z-10 mx-auto  lg:px-8 text-center p-5 px-8 sm:px-2 pt-20">
+      <div className="relative flex items-center justify-center z-10 mx-auto  lg:px-8 text-center p-5 px-8 sm:px-4 pt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

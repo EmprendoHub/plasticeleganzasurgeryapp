@@ -136,7 +136,7 @@ const ProceduresSlider = () => {
             whileTap={{ scale: 0.9 }}
             onClick={scrollPrev}
             disabled={!canScrollPrev}
-            className="absolute left-2 top-[40%] z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-black/90 border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute -left-4 top-[40%] z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-black/90 border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <PiCaretLeftLight className="text-xl md:text-2xl" />
           </motion.button>
@@ -145,7 +145,7 @@ const ProceduresSlider = () => {
             whileTap={{ scale: 0.9 }}
             onClick={scrollNext}
             disabled={!canScrollNext}
-            className="absolute right-2 top-[40%] z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-black/90 border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute -right-4 top-[40%] z-10 w-12 h-12 md:w-14 md:h-14 rounded-full bg-black/90 border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-300 flex items-center justify-center backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <PiCaretRightLight className="text-xl md:text-2xl" />
           </motion.button>

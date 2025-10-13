@@ -795,7 +795,7 @@ export const localproducts = [
     subTitle: "Alivia el peso, realza tu vida",
     titleDescription:
       "Recupera comodidad y confianza con una Reducción de Busto experta",
-    coverImage: "/covers/reduccion_de_senos_cover.jpg",
+    coverImage: "/covers/reduccion-de-busto.jpg",
     whyProcedure: [
       {
         title: "Alivio del dolor y malestar",
@@ -834,6 +834,7 @@ export const localproducts = [
         icon: "BsCheckCircle",
       },
     ],
+    whyImage: "/benefits/reduccion-de-busto_02.jpg",
     understandingProcedure: [
       {
         title: "Consulta inicial",
@@ -988,6 +989,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/rinoplastia_benefit.jpg",
     understandingProcedure: [
       {
         title: "Consulta y Evaluación",
@@ -1101,7 +1103,7 @@ export const localproducts = [
     subTitle: "Abre tus ojos a una nueva belleza",
     titleDescription:
       "Rejuvenece tu mirada y elimina el exceso de piel con una Blefaroplastia experta",
-    coverImage: "/covers/blefaroplastia_cover.jpg",
+    coverImage: "/covers/blefaroplastia-cover.jpg",
     whyProcedure: [
       {
         title: "Rejuvenecimiento de la mirada",
@@ -1137,6 +1139,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/blefaroplastia-benefit.jpg",
     understandingProcedure: [
       {
         title: "Evaluación Pre-Operatoria",
@@ -1248,7 +1251,7 @@ export const localproducts = [
     subTitle: "Transforma tu cuerpo, transforma tu vida",
     titleDescription:
       "Combina la eliminación de grasa y la tonificación abdominal con Liposucción y Abdominoplastia",
-    coverImage: "/covers/lipo_abdominoplastia_cover.jpg",
+    coverImage: "/covers/LipoyAbdo-cover.jpg",
     whyProcedure: [
       {
         title: "Transformación corporal completa",
@@ -1287,6 +1290,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/LipoyAbdo-benefits.webp",
     understandingProcedure: [
       {
         title: "Evaluación Integral",
@@ -1401,7 +1405,7 @@ export const localproducts = [
     subTitle: "Esculpe tu figura, redefine tu silueta",
     titleDescription:
       "Combina la eliminación de grasa y la remodelación corporal con Liposucción y Luxación de Costilla",
-    coverImage: "/covers/lipo_luxacion_costilla_cover.jpg",
+    coverImage: "/covers/lipoyluxa_cover.jpg",
     whyProcedure: [
       {
         title: "Cintura ultra definida",
@@ -1440,6 +1444,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/lipoyluxa_benefits.jpg",
     understandingProcedure: [
       {
         title: "Evaluación Especializada",
@@ -1552,7 +1557,7 @@ export const localproducts = [
     subTitle: "Esculpe tu figura, redefine tu silueta",
     titleDescription:
       "Combina la eliminación de grasa y la remodelación corporal con Liposucción y Remodelación de Costilla",
-    coverImage: "/covers/lipo_remodelacion_costilla_cover.jpg",
+    coverImage: "/covers/lipoyRemo_cover.jpg",
     whyProcedure: [
       {
         title: "Remodelación anatómica precisa",
@@ -1590,6 +1595,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/lipoyRemo_benefits.png",
     understandingProcedure: [
       {
         title: "Análisis Anatómico Detallado",
@@ -1703,7 +1709,7 @@ export const localproducts = [
     subTitle: "Esculpe tu figura, redefine tu silueta",
     titleDescription:
       "Combina la eliminación de grasa y la remodelación corporal con Liposucción y Retiro de Costilla",
-    coverImage: "/covers/lipo_retiro_costilla_cover.jpg",
+    coverImage: "/covers/lipoyretiro_cover.png",
     whyProcedure: [
       {
         title: "Máxima reducción de cintura",
@@ -1742,6 +1748,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/lipoyretiro_benefits.jpg",
     understandingProcedure: [
       {
         title: "Evaluación Médica Integral",
@@ -1854,7 +1861,7 @@ export const localproducts = [
     subTitle: "Renueva tu cuerpo, renueva tu vida",
     titleDescription:
       "Recupera tu figura y confianza con un Mommy Makeover personalizado",
-    coverImage: "/covers/mommy_makeover_cover.jpg",
+    coverImage: "/covers/mommy_cover.webp",
     whyProcedure: [
       {
         title: "Recuperación corporal completa",
@@ -1892,6 +1899,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/momy_benfits.png",
     understandingProcedure: [
       {
         title: "Consulta Integral",
@@ -2006,7 +2014,7 @@ export const localproducts = [
     subTitle: "Asegura tu lugar, transforma tu vida",
     titleDescription:
       "Aparta tu cirugía con un depósito y da el primer paso hacia la transformación que deseas",
-    coverImage: "/covers/apartado_cirugia_cover.jpg",
+    coverImage: "/covers/apartado_cover.jpg",
     whyProcedure: [
       {
         title: "Garantiza tu fecha",
@@ -2044,6 +2052,7 @@ export const localproducts = [
         icon: "FaDollarSign",
       },
     ],
+    whyImage: "/benefits/apartado_benefits.jpg",
     understandingProcedure: [
       {
         title: "Consulta Inicial",

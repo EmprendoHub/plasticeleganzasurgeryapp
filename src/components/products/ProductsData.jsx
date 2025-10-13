@@ -29,10 +29,10 @@ const ProductsData = ({ item }) => {
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.0 }}
-        className="border-[1px] border-yellow-400 rounded-lg"
+        className="border-[1px] border-yellow-400 rounded-lg "
       >
         <Link href={`/servicio/${item._id}`}>
-          <div className="w-full h-[300px] group overflow-hidden relative">
+          <div className="w-full h-[250px] group overflow-hidden relative">
             <Image
               src={item?.imageUrls[0]}
               alt="product image"
@@ -47,20 +47,17 @@ const ProductsData = ({ item }) => {
               </span>
             )}
             {item?.promoPrice ? (
-              <div>
-                <div className="absolute top-2 left-2  border-[1px] border-yellow-600 w-fit py-1 px-4 rounded-full text-xs bg-black text-yellow-500 group-hover:bg-yellow-600 group-hover:text-white duration-200">
-                  <p>
-                    {calculatePercentage(item?.deposit, item?.promoPrice)}%
-                    menos
-                  </p>
-                </div>
+              <div className="absolute top-2 left-2  border-[1px] border-yellow-600 w-fit py-1 px-4 rounded-full text-xs bg-black text-yellow-500 group-hover:bg-yellow-600 group-hover:text-white duration-200">
+                <p>
+                  {calculatePercentage(item?.deposit, item?.promoPrice)}% menos
+                </p>
               </div>
             ) : (
               ""
             )}
           </div>
         </Link>
-        <div className=" px-4 py-4 flex flex-col bg-black rounded-b-lg">
+        <div className=" p-4 flex flex-col bg-black rounded-b-lg min-h-full">
           {/* star icons
             <div className="flex items-center gap-x-1">{startArray}</div> */}
           <p className="text-white tracking-widest">{item?.title}</p>

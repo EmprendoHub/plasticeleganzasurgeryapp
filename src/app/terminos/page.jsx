@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const TerminosPage = () => {
   return (
@@ -139,7 +139,7 @@ const TerminosPage = () => {
             Dirección: Colón Oriente 265 Int 104, Edificio María y José, Colonia
             Centro, CP 59680
           </li>
-          <li>Correo Electrónico: plasticsurgeryzamora@gmail.com</li>
+          <li>Correo Electrónico: ventas@eleganzaplasticsurgerycenter.com</li>
         </ul>
       </div>
     </div>

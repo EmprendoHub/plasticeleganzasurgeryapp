@@ -49,7 +49,7 @@ const FooterComponent = () => {
                     y autoestima que merece. Durante la cirugía, se elimina el
                     exceso de piel y grasa en el área abdominal, y se redefine
                     su figura, logrando un abdomen más firme. Agenda tu cita de
-                    valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
+                    valoración mandando WhatsApp al +52 (351) 180 0950. Aparta
                     tu cirugía agregando al carrito
                   </span>
                   {/* add to cart button */}
@@ -83,7 +83,7 @@ const FooterComponent = () => {
                     la forma de los senos. Esto es una opción popular para
                     personas que desean lograr una apariencia más completa y
                     simétrica en el área del pecho.. Agenda tu cita de
-                    valoración mandando WhatsApp al +52 (351) 120 3448. Aparta
+                    valoración mandando WhatsApp al +52 (351) 180 0950. Aparta
                     tu cirugía agregando al carrito
                   </span>
                   {/* add to cart button */}
@@ -117,7 +117,7 @@ const FooterComponent = () => {
                     contorno más equilibrado y armonioso. Es una manera de
                     sentirse más a gusto con su cuerpo, potenciando su confianza
                     y bienestar. Agenda tu cita de valoración mandando WhatsApp
-                    al +52 (351) 120 3448. Aparta tu cirugía agregando al
+                    al +52 (351) 180 0950. Aparta tu cirugía agregando al
                     carrito
                   </span>
                   {/* add to cart button */}
@@ -151,7 +151,7 @@ const FooterComponent = () => {
                     cirugías, como la abdominoplastia, el aumento de senos, la
                     liposucción y más, según las metas y necesidades de la
                     paciente.. Agenda tu cita de valoración mandando WhatsApp al
-                    +52 (351) 120 3448. Aparta tu cirugía agregando al carrito
+                    +52 (351) 180 0950. Aparta tu cirugía agregando al carrito
                   </span>
                   {/* add to cart button */}
                   <motion.button

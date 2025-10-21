@@ -104,7 +104,7 @@ const MainMenuComponent = () => {
       {/* Whatsapp Button */}
       <div className="">
         <Link
-          href="https://wa.link/98ox9t"
+          href="https://api.whatsapp.com/send?phone=5213511800950&text=%C2%A1HOLA%20ELEGANZA%20BY%20DR.%20FRANCISCO%20RODRIGUEZ!%20%F0%9F%91%8B%0AME%20INTERESA%20SABER%20M%C3%81S%20INFORMACI%C3%93N%20SOBRE%20SUS%20SERVICIO."
           className=" items-center block border border-black rounded-xl p-2 hover:bg-amber-500 hover:text-black transition-all duration-300"
         >
           <BiLogoWhatsapp className="text-2xl" />

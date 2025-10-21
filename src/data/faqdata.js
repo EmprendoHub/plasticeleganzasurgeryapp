@@ -3,7 +3,7 @@ export const accordions = [
     id: 1,
     pregunta: "¿Qué necesito para una cotización?",
     respuesta:
-      "El primer paso es realizarle una valoración personalizada por medio de nuestro WhatsApp oficial +52 (351) 120 3448 o en consultorio. Ya que cada cotización se adapta a sus necesidades para que vuelva a sentirse cómoda y orgullosa de su cuerpo.",
+      "El primer paso es realizarle una valoración personalizada por medio de nuestro WhatsApp oficial +52 (351) 180 0950 o en consultorio. Ya que cada cotización se adapta a sus necesidades para que vuelva a sentirse cómoda y orgullosa de su cuerpo.",
   },
   {
     id: 2,

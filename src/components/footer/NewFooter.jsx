@@ -1,13 +1,19 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import mainlogoimage from "@/images/Eleganza_Plastic_Surgery_Logo_wide_small.png";
 import LogoComponent from "../header/LogoComponent";
 import NewsletterContactForm from "../forms/NewsLetterContactForm";
 import Image from "next/image";
+import { BsTiktok } from "react-icons/bs";
 
 const NewFooter = () => {
   const dispatch = useDispatch();
@@ -48,9 +54,9 @@ const NewFooter = () => {
                     whileTap={{ y: 1 }}
                     transition={{ duration: 0.7 }}
                     className="[text-decoration:none] relative leading-[24px] text-[inherit]"
-                    href="teL:+523511091423"
+                    href="tel:+523511809950"
                   >
-                    Llama al : +52 (351) 120 3448
+                    Llama al : +52 351 180 0950
                   </motion.a>
                   <Link
                     href={"https://maps.app.goo.gl/DB5yDk2vo8LgSE158"}
@@ -69,10 +75,10 @@ const NewFooter = () => {
                     whileTap={{ y: 1 }}
                     transition={{ duration: 0.8 }}
                     className="[text-decoration:none] relative text-[inherit]"
-                    href="mailto:plasticsurgeryzamora@gmail.com"
+                    href="mailto:ventas@eleganzaplasticsurgerycenter.com"
                     target="_blank"
                   >
-                    plasticsurgeryzamora@gmail.com
+                    ventas@eleganzaplasticsurgerycenter.com
                   </motion.a>
                 </motion.div>
                 {/* Social Links */}
@@ -80,9 +86,9 @@ const NewFooter = () => {
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.9 }}
-                  className="mt-4 gap-6 flex flex-row sm:flex-col items-center justify-between"
+                  className="mt-4 gap-3 flex flex-row sm:flex-col items-center justify-between"
                 >
-                  <div className="flex flex-row gap-6">
+                  <div className="flex flex-row gap-3">
                     <motion.a
                       target="_blank"
                       whileHover={{ y: -4 }}
@@ -99,9 +105,9 @@ const NewFooter = () => {
                       whileTap={{ y: 1 }}
                       transition={{ duration: 0.09 }}
                       className="[text-decoration:none] rounded bg-ghostwhite  flex flex-col p-2 items-center justify-center border-[1px] border-solid border-gray-white"
-                      href="https://www.linkedin.com/in/drfrancisco-rodriguez-336771297/"
+                      href="https://www.tiktok.com/@eleganzaplasticsurgery"
                     >
-                      <FaLinkedin color="#ffffff" size={20} />
+                      <BsTiktok color="#ffffff" size={20} />
                     </motion.a>
                     <motion.a
                       target="_blank"
@@ -109,9 +115,19 @@ const NewFooter = () => {
                       whileTap={{ y: 1 }}
                       transition={{ duration: 0.09 }}
                       className="[text-decoration:none] rounded bg-ghostwhite flex flex-col p-2 items-center justify-center border-[1px] border-solid border-gray-white"
-                      href="https://www.instagram.com/eleganza_plasticsurgery_center?igsh=azRtbjhlMTg2cHp3&utm_source=qr"
+                      href="https://www.instagram.com/eleganza_plastic_surgery"
                     >
                       <FaInstagram color="#ffffff" size={20} />
+                    </motion.a>
+                    <motion.a
+                      target="_blank"
+                      whileHover={{ y: -4 }}
+                      whileTap={{ y: 1 }}
+                      transition={{ duration: 0.09 }}
+                      className="[text-decoration:none] rounded bg-ghostwhite flex flex-col p-2 items-center justify-center border-[1px] border-solid border-gray-white"
+                      href="https://www.youtube.com/@eleganzaplasticsurgery"
+                    >
+                      <FaYoutube color="#ffffff" size={20} />
                     </motion.a>
                   </div>
                 </motion.div>

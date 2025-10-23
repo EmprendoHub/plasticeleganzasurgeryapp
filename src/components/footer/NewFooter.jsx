@@ -75,10 +75,10 @@ const NewFooter = () => {
                     whileTap={{ y: 1 }}
                     transition={{ duration: 0.8 }}
                     className="[text-decoration:none] relative text-[inherit]"
-                    href="mailto:ventas@eleganzaplasticsurgerycenter.com"
+                    href="mailto:ventas@eleganzaplasticsurgery.com"
                     target="_blank"
                   >
-                    ventas@eleganzaplasticsurgerycenter.com
+                    ventas@eleganzaplasticsurgery.com
                   </motion.a>
                 </motion.div>
                 {/* Social Links */}

@@ -79,6 +79,29 @@ const BMICalculator = () => {
     return "Nuestras opciones de cirugía de pérdida de peso y procedimientos de contorno corporal pueden ayudarte a lograr tus objetivos de salud y estética.";
   };
 
+  const getBMIPosition = (bmi) => {
+    // Map BMI values to percentage positions on the bar
+    // Bajo peso (0-18.5) -> 0-25%
+    // Normal (18.5-25) -> 25-50%
+    // Sobrepeso (25-30) -> 50-75%
+    // Obesidad (30+) -> 75-100%
+
+    if (bmi < 18.5) {
+      // Map 0-18.5 to 0-25%
+      return (bmi / 18.5) * 25;
+    } else if (bmi >= 18.5 && bmi < 25) {
+      // Map 18.5-25 to 25-50%
+      return 25 + ((bmi - 18.5) / (25 - 18.5)) * 25;
+    } else if (bmi >= 25 && bmi < 30) {
+      // Map 25-30 to 50-75%
+      return 50 + ((bmi - 25) / (30 - 25)) * 25;
+    } else {
+      // Map 30+ to 75-100%
+      // Cap at 100% for very high BMI values
+      return Math.min(75 + ((bmi - 30) / 10) * 25, 100);
+    }
+  };
+
   const resetCalculator = () => {
     setFormData({
       height: "",
@@ -283,10 +306,7 @@ const BMICalculator = () => {
                     <div
                       className="absolute top-0 w-1 h-4 bg-white rounded-full transform -translate-x-1/2 -translate-y-1"
                       style={{
-                        left: `${Math.min(
-                          Math.max((parseFloat(result.bmi) / 40) * 100, 0),
-                          100
-                        )}%`,
+                        left: `${getBMIPosition(parseFloat(result.bmi))}%`,
                       }}
                     />
                   </div>

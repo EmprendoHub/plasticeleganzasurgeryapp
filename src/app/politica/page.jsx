@@ -92,7 +92,7 @@ const PoliticaPage = () => {
             Dirección: Calz. Zamora-Jacona 716, El Ensueño, 59813 Jacona de
             Plancarte, Mich.
           </li>
-          <li>Correo Electrónico: ventas@eleganzaplasticsurgerycenter.com</li>
+          <li>Correo Electrónico: ventas@eleganzaplasticsurgery.com</li>
         </ul>
       </div>
     </div>

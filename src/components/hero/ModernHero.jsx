@@ -12,6 +12,7 @@ const ModernHero = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const procedures = [
     "Abdominoplastia",
@@ -37,7 +38,6 @@ const ModernHero = () => {
 
     // Basic validation
     if (!formData.name || !formData.phone || !formData.email) {
-      toast.error("Por favor complete todos los campos requeridos");
       setIsSubmitting(false);
       return;
     }
@@ -46,9 +46,7 @@ const ModernHero = () => {
       // Here you would integrate with your API
       await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API call
 
-      toast.success(
-        "¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto."
-      );
+      setIsSubmitted(true);
       setFormData({
         name: "",
         phone: "",
@@ -56,8 +54,13 @@ const ModernHero = () => {
         procedure: "",
         message: "",
       });
+
+      // Reset the success message after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 3000);
     } catch (error) {
-      toast.error("Error al enviar el mensaje. Por favor intente nuevamente.");
+      console.error("Error al enviar el mensaje:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -183,10 +186,18 @@ const ModernHero = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-yellow-600 hover:bg-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105"
+                disabled={isSubmitting || isSubmitted}
+                className={`w-full font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 ${
+                  isSubmitted
+                    ? "bg-green-600 hover:bg-green-600"
+                    : "bg-yellow-600 hover:bg-yellow-500"
+                } disabled:opacity-50 disabled:cursor-not-allowed text-white`}
               >
-                {isSubmitting ? "Enviando..." : "Enviar Formulario"}
+                {isSubmitting
+                  ? "Enviando..."
+                  : isSubmitted
+                  ? "✓ Enviado exitosamente"
+                  : "Enviar Formulario"}
               </button>
 
               <p className="text-sm text-gray-700 text-center">

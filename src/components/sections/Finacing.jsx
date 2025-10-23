@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Financing = () => {
   return (
@@ -62,9 +63,13 @@ const Financing = () => {
               viewport={{ once: true }}
               className="pt-6"
             >
-              <button className="bg-gray-900 hover:bg-yellow-400 hover:text-black text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+              <Link
+                className="fbg-gray-900 hover:bg-yellow-400 hover:text-black text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105"
+                href="https://api.whatsapp.com/send?phone=5213511800950&text=%C2%A1HOLA%20ELEGANZA%20BY%20DR.%20FRANCISCO%20RODRIGUEZ!%20%F0%9F%91%8B%0AME%20INTERESA%20SABER%20M%C3%81S%20INFORMACI%C3%93N%20SOBRE%20Planes%20de%20pago%20flexibles"
+                target="_blank"
+              >
                 Comenzar
-              </button>
+              </Link>
             </motion.div>
           </motion.div>
 

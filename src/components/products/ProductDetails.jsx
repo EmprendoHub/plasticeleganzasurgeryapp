@@ -152,7 +152,7 @@ const ProductDetails = ({ ctx, product }) => {
             <div className="flex flex-col gap-4 justify-center max-w-md">
               {/* Pricing Section */}
               <div className="">
-                {product?.promoPrice > 0 && (
+                {/* {product?.promoPrice > 0 && (
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
                     <div className="flex items-center gap-2 mb-2">
                       <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
@@ -170,7 +170,7 @@ const ProductDetails = ({ ctx, product }) => {
                       <FormatedPrice amount={product?.promoPrice} />
                     </p>
                   </div>
-                )}
+                )} */}
 
                 {/* <div className="flex md:flex-col gap-4">
                   <div>

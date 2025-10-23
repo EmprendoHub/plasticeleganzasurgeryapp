@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/shoppingSlice";
-import { IoIosStar, IoMdCheckmark } from "react-icons/io";
+// import { IoIosStar, IoMdCheckmark } from "react-icons/io";
 import {
   BsCheckCircle,
   BsClock,
@@ -172,7 +172,7 @@ const ProductDetails = ({ ctx, product }) => {
                   </div>
                 )}
 
-                <div className="flex md:flex-col gap-4">
+                {/* <div className="flex md:flex-col gap-4">
                   <div>
                     <p className="text-sm text-gray-600 mb-1">
                       Depósito inicial
@@ -191,11 +191,11 @@ const ProductDetails = ({ ctx, product }) => {
                       <FormatedPrice amount={product?.price} />
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* CTA Buttons */}
               <div className="w-full min-w-[600px] md:min-w-full flex md:flex-col gap-4 mt-4">
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg"
@@ -218,10 +218,10 @@ const ProductDetails = ({ ctx, product }) => {
                 >
                   <IoMdCart className="text-xl" />
                   Reservar Ahora
-                </motion.button>
+                </motion.button> */}
 
                 <Link
-                  href="/#reservar"
+                  href={`https://api.whatsapp.com/send?phone=5213511800950&text=%C2%A1HOLA%20ELEGANZA%20BY%20DR.%20FRANCISCO%20RODRIGUEZ!%20%F0%9F%91%8B%0AME%20INTERESA%20RESERVAR%20EL%20PROCEDIMIENTO%20${product?.title}`}
                   target="_blank"
                   className="block w-full"
                 >
@@ -230,8 +230,8 @@ const ProductDetails = ({ ctx, product }) => {
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-black hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3"
                   >
-                    <FaWhatsapp className="text-xl" />
-                    Consulta Gratuita
+                    <IoMdCart className="text-xl" />
+                    Reservar Ahora
                   </motion.button>
                 </Link>
               </div>
@@ -534,7 +534,7 @@ const ProductDetails = ({ ctx, product }) => {
               lograr tus objetivos estéticos
             </p>
             <div className="flex md:flex-col flex-row gap-4 justify-center">
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-black hover:bg-yellow-500  text-yellow-500 hover:text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg"
@@ -557,16 +557,20 @@ const ProductDetails = ({ ctx, product }) => {
               >
                 <IoMdCart className="text-xl" />
                 Reservar Ahora
-              </motion.button>
+              </motion.button> */}
 
-              <Link href="/#reservar" target="_blank" className="block w-full">
+              <Link
+                href={`https://api.whatsapp.com/send?phone=5213511800950&text=%C2%A1HOLA%20ELEGANZA%20BY%20DR.%20FRANCISCO%20RODRIGUEZ!%20%F0%9F%91%8B%0AME%20INTERESA%20RESERVAR%20EL%20PROCEDIMIENTO%20${product?.title}`}
+                target="_blank"
+                className="block w-full"
+              >
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-black hover:bg-gray-950 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3"
+                  className="w-full bg-black hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3"
                 >
-                  <FaCalendarPlus className="text-xl" />
-                  Consulta Gratuita
+                  <IoMdCart className="text-xl" />
+                  Reservar Ahora
                 </motion.button>
               </Link>
             </div>

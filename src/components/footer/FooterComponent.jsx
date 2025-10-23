@@ -189,7 +189,7 @@ const FooterComponent = () => {
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.6 }}
-                  className="w-full flex flex-col items-start justify-start gap-[13px] text-white"
+                  className="w-full flex flex-col items-start justify-start gap-[5px] text-white"
                 >
                   <motion.a
                     whileHover={{ y: -4 }}

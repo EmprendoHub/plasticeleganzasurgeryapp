@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import { useRef } from "react";
+import Link from "next/link";
 import AnimatedText from "../hero/AnimatedText";
 
 const NewsletterContactForm = ({ cookie }) => {
@@ -82,7 +83,7 @@ const NewsletterContactForm = ({ cookie }) => {
         >
           <div className="flex flex-col gap-y-2">
             <AnimatedText
-              text="Desbloquea tu mejor "
+              text="Desbloquea tu mejor"
               text2="versión"
               className="text-white text-4xl font-headerFont md:text-3xl sm:text-2xl mb-6"
             />
@@ -104,26 +105,35 @@ const NewsletterContactForm = ({ cookie }) => {
             transition={{ duration: 0.7 }}
           >
             {!buttonStatus ? (
-              <motion.button
-                whileHover={{ y: -4 }}
-                whileTap={{ y: 1 }}
-                transition={{ duration: 0.02 }}
-                className="mt-5 cursor-pointer px-10 py-5  sm:px-5 bg-black  items-start justify-center border border-yellow-600 hover:bg-yellow-600 duration-300 ease-linear rounded-full"
-                type="submit"
+              <Link
+                href={`https://api.whatsapp.com/send?phone=5213511800950&text=${encodeURIComponent(
+                  `¡HOLA ELEGANZA BY DR. FRANCISCO RODRIGUEZ! 👋\nME INTERESA SABER MÁS INFORMACIÓN SOBRE SUS SERVICIO.\nMi email es: ${
+                    data.email || "No proporcionado"
+                  }`
+                )}`}
+                target="_blank"
+                className="block w-full mt-5"
               >
-                <div className="self-stretch relative flex flex-row justify-between items-center">
-                  <h4 className="m-0 text-white top-[14.5px] left-[25px] text-[18px] pr-5 font-medium font-barlow-condensed text-gray-white text-center inline-block ">
-                    Suscribirse
-                  </h4>
-                  <Image
-                    className="w-[30.5px] sm:w-[25.5px] h-full object-cover"
-                    width={30}
-                    height={30}
-                    alt=""
-                    src="/images/arrow-5.webp"
-                  />
-                </div>
-              </motion.button>
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  whileTap={{ y: 1 }}
+                  transition={{ duration: 0.02 }}
+                  className="cursor-pointer px-10 py-5 sm:px-5 bg-black items-start justify-center border border-yellow-600 hover:bg-yellow-600 duration-300 ease-linear rounded-full"
+                >
+                  <div className="self-stretch relative flex flex-row justify-between items-center">
+                    <h4 className="m-0 text-white top-[14.5px] left-[25px] text-[18px] pr-5 font-medium font-barlow-condensed text-gray-white text-center inline-block ">
+                      Subscribirse
+                    </h4>
+                    <Image
+                      className="w-[30.5px] sm:w-[25.5px] h-full object-cover"
+                      width={30}
+                      height={30}
+                      alt=""
+                      src="/images/arrow-5.webp"
+                    />
+                  </div>
+                </motion.div>
+              </Link>
             ) : (
               <div className="loader flex self-center" />
             )}

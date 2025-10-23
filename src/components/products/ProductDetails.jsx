@@ -740,7 +740,20 @@ const ProductDetails = ({ ctx, product }) => {
               <p className="text-gray-300 mb-6">
                 ¡Mantente informado y conserva tus resultados!
               </p>
-              <div className="flex md:flex-col gap-2">
+              <Link
+                href={`https://api.whatsapp.com/send?phone=5213511800950&text=%C2%A1HOLA%20ELEGANZA%20BY%20DR.%20FRANCISCO%20RODRIGUEZ!%20%F0%9F%91%8B%0AME%20INTERESA%20SABER%20M%C3%81S%20INFORMACI%C3%93N%20SOBRE%20SUS%20SERVICIO.`}
+                target="_blank"
+                className="block w-full"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-black hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center justify-center gap-3"
+                >
+                  Mas Información
+                </motion.button>
+              </Link>
+              {/* <div className="flex md:flex-col gap-2">
                 <input
                   type="email"
                   placeholder="Tu email"
@@ -749,7 +762,7 @@ const ProductDetails = ({ ctx, product }) => {
                 <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded-lg transition-all duration-300">
                   ¡REGÍSTRAME!
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>

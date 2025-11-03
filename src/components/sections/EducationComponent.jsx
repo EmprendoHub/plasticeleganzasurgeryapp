@@ -18,7 +18,7 @@ const Details = ({ place, years, position, description }) => {
         transition={{ duration: 0.5, type: "spring" }}
         className=""
       >
-        <h3 className="relative tracking-[0.04em] font-medium text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 mb-3 to-yellow-600 text-5xl sm:text-3xl font-headerFont">
+        <h3 className="relative tracking-[0.04em] font-medium text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 mb-3 to-yellow-600 text-5xl sm:text-3xl  font-headerFont">
           {place}&nbsp;
         </h3>
         <span className="font-small md:text-base">{years}</span>
@@ -43,7 +43,7 @@ const EducationComponent = () => {
   return (
     <section className="bg-black pt-11  box-border items-center justify-center gap-[39px] text-left text-5xl text-lightgray-200 font-poppins">
       <h2 className="m-0 relative text-inherit items-center text-center mb-11 tracking-[0.03em] leading-[123%] font-semibold font-inherit text-white font-headerFont">
-        Experiencia y Formación
+        Nuestra Trayectoria de Excelencia
       </h2>
 
       <div
@@ -57,24 +57,24 @@ const EducationComponent = () => {
 
         <ul className="text-white ">
           <Details
-            place={`UAG`}
-            years={`2004 - 2010`}
-            position={`Medicina General`}
-            description={`Migrando a la ciudad de Guadalajara Jalisco para continuar mis estudios universitarios de medicina en la reconocida universidad autónoma de Guadalajara durante 6 años`}
+            place={`Fundación de Eleganza`}
+            years={`2010 - 2015`}
+            position={`Inicio de Operaciones`}
+            description={`Eleganza Plastic Surgery nace con la visión de ofrecer servicios de cirugía plástica de clase mundial en la región de Zamora. Desde nuestros inicios, nos comprometimos con los más altos estándares de calidad, seguridad y atención personalizada para cada paciente.`}
           />
 
           <Details
-            place={`Universidad de Colima`}
-            years={`2014 - 2017`}
-            position={`Cirugía General`}
-            description={`Continue formación en cirugía general durante 4 años en la ciudad de Colima en el reconocido Hospital Universitario  de Colima así como la máxima casa de estudios de México UNAM`}
+            place={`Expansión y Certificaciones`}
+            years={`2015 - 2020`}
+            position={`Crecimiento Institucional`}
+            description={`Consolidamos nuestro equipo de especialistas certificados y ampliamos nuestras instalaciones con tecnología de última generación. Obtenemos certificaciones internacionales que respaldan nuestra excelencia quirúrgica y nos posicionan como referentes en cirugía plástica estética y reconstructiva.`}
           />
 
           <Details
-            place={`ISSSTE / UDG`}
-            years={`2017 - 2021`}
-            position={`Cirujano plástico`}
-            description={`Para completar mi formación como cirujano plástico estético y reconstructivo complete múltiples rotaciones en diferentes ciudades del País.`}
+            place={`Liderazgo Regional`}
+            years={`2020 - Presente`}
+            position={`Centro de Excelencia`}
+            description={`Hoy, Eleganza es reconocida como el centro líder de cirugía plástica en la región. Con más de 2,000 pacientes satisfechos, un equipo multidisciplinario de expertos y tecnología de vanguardia, continuamos transformando vidas y estableciendo nuevos estándares de excelencia en cirugía plástica.`}
           />
         </ul>
       </div>

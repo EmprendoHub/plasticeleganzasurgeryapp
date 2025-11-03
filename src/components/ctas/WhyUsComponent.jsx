@@ -42,9 +42,9 @@ const WhyUsComponent = () => {
         >
           <AnimatedText
             text={`¿Por qué`}
-            text2={`Operarte`}
-            text3={`con Nosotros?`}
-            descrp={`Usamos las técnicas mas novedosas de la cirugía plástica estética y reconstructiva para mejorar el aspecto físico, estético, funcional y emocional  de todos y cada uno de mis pacientes sin dejar el lado humano, ético y profesional. `}
+            text2={`Elegir`}
+            text3={`Eleganza?`}
+            descrp={`En Eleganza Plastic Surgery, combinamos tecnología de vanguardia con técnicas quirúrgicas avanzadas para ofrecer resultados excepcionales. Nuestro equipo multidisciplinario de especialistas certificados se dedica a transformar vidas a través de procedimientos estéticos y reconstructivos de la más alta calidad, siempre priorizando la seguridad, el bienestar y la satisfacción de nuestros pacientes.`}
             className="text-white text-5xl sm:text-4xl font-headerFont"
           />
         </motion.div>
@@ -61,14 +61,23 @@ const WhyUsComponent = () => {
 
           <div className=" flex flex-col items-start justify-start gap-3 text-silver-200">
             <div className="relative tracking-[0.04em] font-medium text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 to-yellow-600 inline-block w-[98px] text-5xl">
-              <AnimatedNumbers value={10} />+
+              <AnimatedNumbers value={15} />+
             </div>
             <h3 className="text-white m-0 relative text-2xl leading-[146%] font-medium font-roboto inline-block w-[235px]">
               Años de Experiencia
             </h3>
           </div>
 
-          <Link href="/#reservar" className="inline-block">
+          <div className=" flex flex-col items-start justify-start gap-3 text-silver-200 pr-10 pb-10 sm:px-0">
+            <div className="relative tracking-[0.04em] font-medium text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 to-yellow-600 inline-block w-[120px] text-5xl">
+              <AnimatedNumbers value={100} />%
+            </div>
+            <h3 className="text-white m-0 relative text-2xl leading-[146%] font-medium font-roboto inline-block w-[260px]">
+              Satisfacción Garantizada
+            </h3>
+          </div>
+
+          <Link href="/#reservar" className="inline-block mt-8 w-full">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

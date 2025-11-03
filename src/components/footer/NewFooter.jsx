@@ -62,7 +62,7 @@ const NewFooter = () => {
                     href={"https://maps.app.goo.gl/DB5yDk2vo8LgSE158"}
                     target="_blank"
                   >
-                    <div className="relative leading-[24px] flex items-end ">
+                    <div className="relative leading-[24px] flex flex-col items-start ">
                       <p className="m-0 font-bold">{`Zamora`}</p>
                       <p className="m-0">{`Calz. Zamora-Jacona 716, `}</p>
                       <p className="m-0">{`2ndo piso, Jacona de Plancarte, Mich.`}</p>
@@ -75,7 +75,7 @@ const NewFooter = () => {
                     href={"https://maps.app.goo.gl/V7GopEf1Qmyn1cwa8"}
                     target="_blank"
                   >
-                    <div className="relative leading-[24px] flex items-end ">
+                    <div className="relative leading-[24px] flex flex-col items-start">
                       <p className="m-0 font-bold">{`Tijuana`}</p>
                       <p className="m-0">{`Paseo del Centenario 9850,`}</p>
                       <p className="m-0">{`piso 25, Hospital New City Medical,`}</p>
@@ -88,7 +88,7 @@ const NewFooter = () => {
                     href={"https://maps.app.goo.gl/d2NYZCsVfoFJQ9XY9"}
                     target="_blank"
                   >
-                    <div className="relative leading-[24px] flex items-end ">
+                    <div className="relative leading-[24px] flex flex-col items-start ">
                       <p className="m-0 font-bold">{`Guadalajara`}</p>
                       <p className="m-0">{`Av. Ignacio L. Vallarta 1369,`}</p>
                       <p className="m-0">{`Colonia Americana, Hospital Joya`}</p>

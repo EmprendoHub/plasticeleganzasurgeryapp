@@ -61,7 +61,7 @@ const ProductsData = ({ item }) => {
           {/* star icons
             <div className="flex items-center gap-x-1">{startArray}</div> */}
           <p className="text-white tracking-widest">{item?.title}</p>
-          <div className="pricing-class flex fle-row items-center gap-x-2">
+          {/* <div className="pricing-class flex fle-row items-center gap-x-2">
             <div className="flex flex-col gap-y-1">
               {item?.promoPrice ? (
                 <div>
@@ -81,16 +81,16 @@ const ProductsData = ({ item }) => {
                 ) : null}
               </p>
             </div>
-          </div>
-          <div className="">
+          </div> */}
+          {/* <div className="">
             <p className="text-xs text-yellow-600">Reserva tu Cirugía</p>
             <p className="font-semibold text-white tracking-wider">
               <FormatedPrice amount={item?.deposit} />
             </p>
-          </div>
+          </div> */}
           <div className="flex flex-wrap gap-2 items-center justify-between my-5">
             {/* add to cart button */}
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.9 }}
               className="bg-yellow-600 px-3 py-2 text-xs flex flex-row justify-between gap-x-2 items-center tracking-wide rounded-full text-slate-100 hover:bg-black hover:text-white duration-500"
@@ -110,7 +110,7 @@ const ProductsData = ({ item }) => {
             >
               Reservar
               <PiMoney className="" />
-            </motion.button>
+            </motion.button> */}
             <Link href="https://wa.link/98ox9t" target="_blank">
               <motion.div
                 whileHover={{ scale: 1.07 }}

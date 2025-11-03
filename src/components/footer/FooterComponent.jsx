@@ -205,16 +205,38 @@ const FooterComponent = () => {
                     target="_blank"
                   >
                     <div className="relative leading-[24px] flex items-end ">
-                      <span className="[line-break:anywhere] w-full">
-                        <p className="m-0">{`Calz. Zamora-Jacona 716, `}</p>
-                        <p className="m-0">{`2ndo piso, Jacona de Plancarte, Mich.`}</p>
-                        <p className="m-0">
-                          Fraccionamiento El Ensueño, CP 59813
-                        </p>
-                      </span>
+                      <p className="m-0 font-bold">{`Zamora`}</p>
+                      <p className="m-0">{`Calz. Zamora-Jacona 716, `}</p>
+                      <p className="m-0">{`2ndo piso, Jacona de Plancarte, Mich.`}</p>
+                      <p className="m-0">
+                        Fraccionamiento El Ensueño, CP 59813
+                      </p>
                     </div>
                   </Link>
-
+                  <Link
+                    href={"https://maps.app.goo.gl/V7GopEf1Qmyn1cwa8"}
+                    target="_blank"
+                  >
+                    <div className="relative leading-[24px] flex items-end ">
+                      <p className="m-0 font-bold">{`Tijuana`}</p>
+                      <p className="m-0">{`Paseo del Centenario 9850,`}</p>
+                      <p className="m-0">{`piso 25, Hospital New City Medical,`}</p>
+                      <p className="m-0">
+                        {`Zona Urbana Río Tijuana, B.C., CP 22010`}
+                      </p>
+                    </div>
+                  </Link>
+                  <Link
+                    href={"https://maps.app.goo.gl/d2NYZCsVfoFJQ9XY9"}
+                    target="_blank"
+                  >
+                    <div className="relative leading-[24px] flex items-end ">
+                      <p className="m-0 font-bold">{`Guadalajara`}</p>
+                      <p className="m-0">{`Av. Ignacio L. Vallarta 1369,`}</p>
+                      <p className="m-0">{`Colonia Americana, Hospital Joya`}</p>
+                      <p className="m-0">{`Guadalajara, Jalisco 44160`}</p>
+                    </div>
+                  </Link>
                   <motion.a
                     whileHover={{ y: -4 }}
                     whileTap={{ y: 1 }}

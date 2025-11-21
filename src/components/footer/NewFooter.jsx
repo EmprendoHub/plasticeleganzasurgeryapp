@@ -41,7 +41,7 @@ const NewFooter = () => {
                   transition={{ duration: 0.5 }}
                   className="m-0 font-headerFont relative text-4xl leading-[45px] font-semibold font-inherit text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500 "
                 >
-                  La mejor experiencia en cirugía plástica de Zamora
+                  {`La mejor experiencia en cirugía plástica de México`}
                 </motion.p>
                 <motion.div
                   initial={{ y: 30, opacity: 0 }}

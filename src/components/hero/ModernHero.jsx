@@ -98,7 +98,7 @@ const ModernHero = () => {
               <span className="block">Centro Líder</span>
               <span className="block text-yellow-500">
                 {" "}
-                de Cirugía Plástica en el area Zamora
+                de Cirugía Plástica en México
               </span>
             </h1>
 

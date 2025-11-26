@@ -43,8 +43,31 @@ const ModernHero = () => {
     }
 
     try {
-      // Here you would integrate with your API
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API call
+      const response = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.procedure
+            ? `Procedimiento de interés: ${formData.procedure}${
+                formData.message
+                  ? `\n\nMensaje adicional: ${formData.message}`
+                  : ""
+              }`
+            : formData.message || "Consulta general",
+          honeypot: "",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Error al enviar el mensaje");
+      }
 
       setIsSubmitted(true);
       setFormData({
@@ -61,6 +84,9 @@ const ModernHero = () => {
       }, 3000);
     } catch (error) {
       console.error("Error al enviar el mensaje:", error);
+      alert(
+        "Hubo un error al enviar el formulario. Por favor, intenta de nuevo."
+      );
     } finally {
       setIsSubmitting(false);
     }
